@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot Lawn Mower Specs &amp; Scores — Open Dataset (23 models, 9 brands)</title>
+<meta name="description" content="Open CC-BY dataset: specs, cited sources, dated price snapshots, and a transparent 0-5 score for 23 wire-free and RTK robot lawn mowers across 9 brands. Compiled by BestRobotMower.co.">
+<link rel="canonical" href="https://yumaheymans.github.io/robot-lawn-mower-specs/">
+<meta property="og:title" content="Robot Lawn Mower Specs &amp; Scores — Open Dataset">
+<meta property="og:description" content="Specs, cited sources, price snapshots, and a transparent 0-5 score for 23 robot lawn mowers. CC-BY, by BestRobotMower.co.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yumaheymans.github.io/robot-lawn-mower-specs/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Robot Lawn Mower Specs & Scores", "description": "Specs, cited sources, price snapshots, and a transparent 0-5 BestRobotMower Score for wire-free and RTK robot lawn mowers. Compiled and computed by BestRobotMower.co, an independent comparison site.", "url": "https://bestrobotmower.co", "sameAs": "https://github.com/yumaheymans/robot-lawn-mower-specs", "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Organization", "name": "BestRobotMower.co", "url": "https://bestrobotmower.co"}, "isAccessibleForFree": true, "keywords": ["robot lawn mower", "robotic mower", "specifications", "RTK GNSS", "comparison", "dataset"], "dateModified": "2026-08-24", "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://raw.githubusercontent.com/yumaheymans/robot-lawn-mower-specs/main/data/mowers.csv"}, {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://raw.githubusercontent.com/yumaheymans/robot-lawn-mower-specs/main/data/mowers.json"}], "variableMeasured": ["navigation type", "max coverage m2", "max slope percent", "price snapshot usd", "price per m2", "BestRobotMower score"]}</script>
+<style>
+  :root{--bg:#0f1512;--card:#151c18;--line:#26312b;--fg:#e8efe9;--muted:#9db0a4;--green:#3ecf8e;--green2:#2fae76;}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+  a{color:var(--green)}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 64px}
+  header.hero{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:24px}
+  .kicker{color:var(--green);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:12px}
+  h1{font-size:30px;line-height:1.2;margin:.3em 0 .2em}
+  .lead{color:var(--muted);max-width:70ch}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .pill{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 12px;align-items:center}
+  .controls input,.controls select{background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 10px;font-size:14px}
+  .controls input{min-width:200px;flex:1}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{color:var(--muted);font-weight:600;cursor:pointer;user-select:none;white-space:nowrap;position:sticky;top:0;background:var(--bg)}
+  th[aria-sort]::after{content:" ↕";opacity:.4}
+  th[aria-sort="ascending"]::after{content:" ↑";opacity:1}
+  th[aria-sort="descending"]::after{content:" ↓";opacity:1}
+  td.ctr,th.ctr{text-align:right;white-space:nowrap}
+  .c-model a{font-weight:600;text-decoration:none}
+  .c-model a:hover{text-decoration:underline}
+  .c-model .brand{display:block;color:var(--muted);font-size:12px;font-weight:400}
+  .badge{display:inline-block;min-width:34px;text-align:center;background:var(--green);color:#062017;font-weight:800;border-radius:6px;padding:2px 7px;font-size:13px}
+  .badge-na{background:transparent;border:1px solid var(--line);color:var(--muted);font-weight:600}
+  h2{font-size:20px;margin:44px 0 6px;border-top:1px solid var(--line);padding-top:28px}
+  .methodology ul,.subscores{list-style:none;padding:0;margin:10px 0;display:flex;flex-wrap:wrap;gap:8px}
+  .methodology li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+  .methodology li span{color:var(--muted);margin-right:8px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-top:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .card h3{font-size:16px;margin:0 0 8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .card .nav{color:var(--green);font-size:13px;margin:.2em 0}
+  .card .summary{margin:.4em 0}
+  .card .specs,.card .price{color:var(--muted);font-size:13px;margin:.3em 0}
+  .subscores{gap:6px}
+  .subscores li{background:#0f1512;border:1px solid var(--line);border-radius:6px;padding:3px 8px;font-size:12px}
+  .subscores li span{color:var(--muted);margin-right:6px}
+  .card .links{margin-top:12px;font-size:13px}
+  .card .cta{font-weight:600;text-decoration:none}
+  .card .cta:hover{text-decoration:underline}
+  footer{margin-top:52px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:13px}
+  footer a{color:var(--green)}
+  .disc{font-size:12px;margin-top:10px}
+  @media(max-width:640px){.hide-sm{display:none}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="kicker">Open Dataset · CC BY 4.0</div>
+  <h1>Robot Lawn Mower Specs &amp; Scores</h1>
+  <p class="lead">Specs, cited sources, price snapshots, and a transparent 0-5 BestRobotMower Score for wire-free and RTK robot lawn mowers. Compiled and computed by BestRobotMower.co, an independent comparison site. Every row links to a full write-up, cited manufacturer sources, and a dated price snapshot on <a href="https://bestrobotmower.co/?utm_source=github&utm_medium=pages&utm_campaign=mower-dataset" rel="noopener">BestRobotMower.co</a>.</p>
+  <div class="meta">
+    <span class="pill">23 models</span>
+    <span class="pill">9 brands</span>
+    <span class="pill">21 shipping · 2 announced</span>
+    <span class="pill">Prices verified 2026-08-24</span>
+    <span class="pill"><a href="https://github.com/yumaheymans/robot-lawn-mower-specs" rel="noopener">Source repo ↗</a></span>
+  </div>
+</header>
+
+<div class="controls">
+  <input id="q" type="search" placeholder="Search model or brand…" aria-label="Search">
+  <select id="brand" aria-label="Filter by brand"><option value="">All brands</option><option value="Dreame">Dreame</option><option value="EcoFlow">EcoFlow</option><option value="Ecovacs">Ecovacs</option><option value="Husqvarna">Husqvarna</option><option value="MOVA">MOVA</option><option value="Mammotion">Mammotion</option><option value="Segway">Segway</option><option value="Sunseeker">Sunseeker</option><option value="Worx">Worx</option></select>
+  <select id="status" aria-label="Filter by status"><option value="">All</option><option value="shipping">Shipping</option><option value="announced">Announced</option></select>
+</div>
+
+<div style="overflow-x:auto">
+<table id="tbl">
+<thead><tr>
+  <th data-key="name">Model</th>
+  <th class="ctr" data-key="score" aria-sort="descending">Score</th>
+  <th class="hide-sm" data-key="nav">Navigation</th>
+  <th class="ctr hide-sm" data-key="awd">AWD</th>
+  <th class="ctr" data-key="cov">Coverage</th>
+  <th class="ctr" data-key="slope">Slope</th>
+  <th class="ctr" data-key="price">Price*</th>
+  <th class="ctr hide-sm" data-key="ppm">$/m²</th>
+</tr></thead>
+<tbody>
+<tr data-brand="Mammotion" data-status="shipping" data-score="4.7" data-name="mammotion luba 2 awd 5000">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Mammotion Luba 2 AWD 5000</a><span class="brand">Mammotion</span></td>
+      <td class="c-score" data-sort="4.7"><span class="badge">4.7</span></td>
+      <td>RTK GNSS</td>
+      <td class="ctr">Yes</td>
+      <td class="ctr" data-sort="5000">5000 m²</td>
+      <td class="ctr" data-sort="80">80%</td>
+      <td class="ctr" data-sort="2899">$2899</td>
+      <td class="ctr" data-sort="0.58">$0.58</td>
+    </tr>
+<tr data-brand="MOVA" data-status="shipping" data-score="4.7" data-name="mova lidax ultra 3000 awd">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">MOVA LiDAX Ultra 3000 AWD</a><span class="brand">MOVA</span></td>
+      <td class="c-score" data-sort="4.7"><span class="badge">4.7</span></td>
+      <td>LiDAR + Vision</td>
+      <td class="ctr">Yes</td>
+      <td class="ctr" data-sort="3035">3035 m²</td>
+      <td class="ctr" data-sort="80">80%</td>
+      <td class="ctr" data-sort="2399">$2399</td>
+      <td class="ctr" data-sort="0.79">$0.79</td>
+    </tr>
+<tr data-brand="Dreame" data-status="shipping" data-score="4.6" data-name="dreame roboticmower a3 awd pro">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Dreame Roboticmower A3 AWD Pro</a><span class="brand">Dreame</span></td>
+      <td class="c-score" data-sort="4.6"><span class="badge">4.6</span></td>
+      <td>LiDAR + Vision</td>
+      <td class="ctr">Yes</td>
+      <td class="ctr" data-sort="2500">2500 m²</td>
+      <td class="ctr" data-sort="80">80%</td>
+      <td class="ctr" data-sort="2249.99">$2249.99</td>
+      <td class="ctr" data-sort="0.9">$0.9</td>
+    </tr>
+<tr data-brand="Ecovacs" data-status="shipping" data-score="4.5" data-name="ecovacs goat a2000 lidar pro">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/ecovacs-goat-a2000-lidar-pro?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Ecovacs Goat A2000 LiDAR PRO</a><span class="brand">Ecovacs</span></td>
+      <td class="c-score" data-sort="4.5"><span class="badge">4.5</span></td>
+      <td>LiDAR + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="2023">2023 m²</td>
+      <td class="ctr" data-sort="50">50%</td>
+      <td class="ctr" data-sort="1399">$1399</td>
+      <td class="ctr" data-sort="0.69">$0.69</td>
+    </tr>
+<tr data-brand="Ecovacs" data-status="shipping" data-score="4.3" data-name="ecovacs goat g1">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/ecovacs-goat-g1?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Ecovacs Goat G1</a><span class="brand">Ecovacs</span></td>
+      <td class="c-score" data-sort="4.3"><span class="badge">4.3</span></td>
+      <td>LiDAR + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="1600">1600 m²</td>
+      <td class="ctr" data-sort="45">45%</td>
+      <td class="ctr" data-sort="1599">$1599</td>
+      <td class="ctr" data-sort="1">$1</td>
+    </tr>
+<tr data-brand="Segway" data-status="shipping" data-score="4.3" data-name="segway navimow x330">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/segway-navimow-x330?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Segway Navimow X330</a><span class="brand">Segway</span></td>
+      <td class="c-score" data-sort="4.3"><span class="badge">4.3</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="3000">3000 m²</td>
+      <td class="ctr" data-sort="50">50%</td>
+      <td class="ctr" data-sort="2299">$2299</td>
+      <td class="ctr" data-sort="0.77">$0.77</td>
+    </tr>
+<tr data-brand="MOVA" data-status="shipping" data-score="4.2" data-name="mova lidax ultra 1000">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/mova-lidax-ultra-1000?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">MOVA LiDAX Ultra 1000</a><span class="brand">MOVA</span></td>
+      <td class="c-score" data-sort="4.2"><span class="badge">4.2</span></td>
+      <td>LiDAR + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="1000">1000 m²</td>
+      <td class="ctr" data-sort="45">45%</td>
+      <td class="ctr" data-sort="999">$999</td>
+      <td class="ctr" data-sort="1">$1</td>
+    </tr>
+<tr data-brand="Dreame" data-status="shipping" data-score="4" data-name="dreame a3 awd">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/dreame-a3-awd?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Dreame A3 AWD</a><span class="brand">Dreame</span></td>
+      <td class="c-score" data-sort="4"><span class="badge">4.0</span></td>
+      <td>LiDAR + Vision</td>
+      <td class="ctr">Yes</td>
+      <td class="ctr" data-sort="1000">1000 m²</td>
+      <td class="ctr" data-sort="80">80%</td>
+      <td class="ctr" data-sort="1599.99">$1599.99</td>
+      <td class="ctr" data-sort="1.6">$1.6</td>
+    </tr>
+<tr data-brand="EcoFlow" data-status="shipping" data-score="4" data-name="ecoflow blade">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/ecoflow-blade?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">EcoFlow Blade</a><span class="brand">EcoFlow</span></td>
+      <td class="c-score" data-sort="4"><span class="badge">4.0</span></td>
+      <td>RTK GNSS</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="2800">2800 m²</td>
+      <td class="ctr" data-sort="27">27%</td>
+      <td class="ctr" data-sort="2899">$2899</td>
+      <td class="ctr" data-sort="1.04">$1.04</td>
+    </tr>
+<tr data-brand="Sunseeker" data-status="shipping" data-score="4" data-name="sunseeker x3 plus">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/sunseeker-x3-plus?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Sunseeker X3 Plus</a><span class="brand">Sunseeker</span></td>
+      <td class="c-score" data-sort="4"><span class="badge">4.0</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="1200">1200 m²</td>
+      <td class="ctr" data-sort="30">30%</td>
+      <td class="ctr" data-sort="999">$999</td>
+      <td class="ctr" data-sort="0.83">$0.83</td>
+    </tr>
+<tr data-brand="Worx" data-status="shipping" data-score="4" data-name="worx landroid vision wr220">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/worx-landroid-vision-wr220?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Worx Landroid Vision WR220</a><span class="brand">Worx</span></td>
+      <td class="c-score" data-sort="4"><span class="badge">4.0</span></td>
+      <td>Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="2023">2023 m²</td>
+      <td class="ctr" data-sort="30">30%</td>
+      <td class="ctr" data-sort="999.99">$999.99</td>
+      <td class="ctr" data-sort="0.49">$0.49</td>
+    </tr>
+<tr data-brand="Mammotion" data-status="shipping" data-score="3.9" data-name="mammotion yuka 1500">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/mammotion-yuka-1500?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Mammotion Yuka 1500</a><span class="brand">Mammotion</span></td>
+      <td class="c-score" data-sort="3.9"><span class="badge">3.9</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="1500">1500 m²</td>
+      <td class="ctr" data-sort="45">45%</td>
+      <td class="ctr" data-sort="1799">$1799</td>
+      <td class="ctr" data-sort="1.2">$1.2</td>
+    </tr>
+<tr data-brand="Dreame" data-status="shipping" data-score="3.8" data-name="dreame roboticmower a1">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/dreame-roboticmower-a1?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Dreame Roboticmower A1</a><span class="brand">Dreame</span></td>
+      <td class="c-score" data-sort="3.8"><span class="badge">3.8</span></td>
+      <td>LiDAR + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="2000">2000 m²</td>
+      <td class="ctr" data-sort="45">45%</td>
+      <td class="ctr" data-sort="2099">$2099</td>
+      <td class="ctr" data-sort="1.05">$1.05</td>
+    </tr>
+<tr data-brand="Ecovacs" data-status="shipping" data-score="3.8" data-name="ecovacs goat o1200">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/ecovacs-goat-o1200?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Ecovacs Goat O1200</a><span class="brand">Ecovacs</span></td>
+      <td class="c-score" data-sort="3.8"><span class="badge">3.8</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="1200">1200 m²</td>
+      <td class="ctr" data-sort="45">45%</td>
+      <td class="ctr" data-sort="1499">$1499</td>
+      <td class="ctr" data-sort="1.25">$1.25</td>
+    </tr>
+<tr data-brand="Mammotion" data-status="shipping" data-score="3.8" data-name="mammotion luba 2 awd 1000">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/mammotion-luba-2-awd-1000?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Mammotion Luba 2 AWD 1000</a><span class="brand">Mammotion</span></td>
+      <td class="c-score" data-sort="3.8"><span class="badge">3.8</span></td>
+      <td>RTK GNSS</td>
+      <td class="ctr">Yes</td>
+      <td class="ctr" data-sort="1000">1000 m²</td>
+      <td class="ctr" data-sort="80">80%</td>
+      <td class="ctr" data-sort="1599">$1599</td>
+      <td class="ctr" data-sort="1.6">$1.6</td>
+    </tr>
+<tr data-brand="Mammotion" data-status="shipping" data-score="3.8" data-name="mammotion yuka mini">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/mammotion-yuka-mini?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Mammotion Yuka Mini</a><span class="brand">Mammotion</span></td>
+      <td class="c-score" data-sort="3.8"><span class="badge">3.8</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="809">809 m²</td>
+      <td class="ctr" data-sort="50">50%</td>
+      <td class="ctr" data-sort="999">$999</td>
+      <td class="ctr" data-sort="1.23">$1.23</td>
+    </tr>
+<tr data-brand="Segway" data-status="shipping" data-score="3.8" data-name="segway navimow i110n">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/segway-navimow-i110n?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Segway Navimow i110N</a><span class="brand">Segway</span></td>
+      <td class="c-score" data-sort="3.8"><span class="badge">3.8</span></td>
+      <td>RTK GNSS</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="1012">1012 m²</td>
+      <td class="ctr" data-sort="30">30%</td>
+      <td class="ctr" data-sort="1099">$1099</td>
+      <td class="ctr" data-sort="1.09">$1.09</td>
+    </tr>
+<tr data-brand="Worx" data-status="shipping" data-score="3.8" data-name="worx landroid vision cloud">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/worx-landroid-vision-cloud?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Worx Landroid Vision Cloud</a><span class="brand">Worx</span></td>
+      <td class="c-score" data-sort="3.8"><span class="badge">3.8</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="1012">1012 m²</td>
+      <td class="ctr" data-sort="35">35%</td>
+      <td class="ctr" data-sort="1199">$1199</td>
+      <td class="ctr" data-sort="1.18">$1.18</td>
+    </tr>
+<tr data-brand="Husqvarna" data-status="shipping" data-score="3.7" data-name="husqvarna automower 435 iq awd">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/husqvarna-automower-435-iq-awd?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Husqvarna Automower 435 iQ AWD</a><span class="brand">Husqvarna</span></td>
+      <td class="c-score" data-sort="3.7"><span class="badge">3.7</span></td>
+      <td>RTK GNSS</td>
+      <td class="ctr">Yes</td>
+      <td class="ctr" data-sort="5261">5261 m²</td>
+      <td class="ctr" data-sort="70">70%</td>
+      <td class="ctr" data-sort="4999">$4999</td>
+      <td class="ctr" data-sort="0.95">$0.95</td>
+    </tr>
+<tr data-brand="Segway" data-status="shipping" data-score="3.4" data-name="segway navimow i105e">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/segway-navimow-i105e?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Segway Navimow i105E</a><span class="brand">Segway</span></td>
+      <td class="c-score" data-sort="3.4"><span class="badge">3.4</span></td>
+      <td>RTK GNSS</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="506">506 m²</td>
+      <td class="ctr" data-sort="30">30%</td>
+      <td class="ctr" data-sort="799">$799</td>
+      <td class="ctr" data-sort="1.58">$1.58</td>
+    </tr>
+<tr data-brand="Husqvarna" data-status="shipping" data-score="3" data-name="husqvarna automower 410 iq">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/husqvarna-automower-410-iq?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Husqvarna Automower 410 iQ</a><span class="brand">Husqvarna</span></td>
+      <td class="c-score" data-sort="3"><span class="badge">3.0</span></td>
+      <td>RTK GNSS</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="2023">2023 m²</td>
+      <td class="ctr" data-sort="45">45%</td>
+      <td class="ctr" data-sort="2999">$2999</td>
+      <td class="ctr" data-sort="1.48">$1.48</td>
+    </tr>
+<tr data-brand="Ecovacs" data-status="announced" data-score="-1" data-name="ecovacs goat a3000 lidar">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/ecovacs-goat-a3000-lidar?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Ecovacs Goat A3000 LiDAR</a><span class="brand">Ecovacs</span></td>
+      <td class="c-score" data-sort="-1"><span class="badge badge-na">Announced</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="3035">3035 m²</td>
+      <td class="ctr" data-sort="50">50%</td>
+      <td class="ctr" data-sort="1910">$1910</td>
+      <td class="ctr" data-sort="0.63">$0.63</td>
+    </tr>
+<tr data-brand="Segway" data-status="announced" data-score="-1" data-name="segway navimow x390">
+      <td class="c-model"><a href="https://bestrobotmower.co/mowers/segway-navimow-x390?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Segway Navimow X390</a><span class="brand">Segway</span></td>
+      <td class="c-score" data-sort="-1"><span class="badge badge-na">Announced</span></td>
+      <td>RTK + Vision</td>
+      <td class="ctr">—</td>
+      <td class="ctr" data-sort="10118">10118 m²</td>
+      <td class="ctr" data-sort="50">50%</td>
+      <td class="ctr" data-sort="4499">$4499</td>
+      <td class="ctr" data-sort="0.44">$0.44</td>
+    </tr>
+</tbody>
+</table>
+</div>
+<p class="disc">*Dated price snapshot at 2026-08-24, not a live price. Price fields are DATED SNAPSHOTS of the cheapest tracked retail price at prices_last_verified, not live prices. See the source_url on the site for the current price.</p>
+
+<h2>How the BestRobotMower Score is computed</h2>
+<p class="lead">A transparent 0-5 weighted average of five per-axis sub-scores, computed from the same cited specs shown here. Only shipping models are scored; announced models are listed without a score. Full rubric on <a href="https://bestrobotmower.co/methodology?utm_source=github&utm_medium=pages&utm_campaign=mower-dataset" rel="noopener">the methodology page</a>.</p>
+<div class="methodology"><ul><li><span>Navigation &amp; mapping</span><b>25%</b></li><li><span>Obstacle avoidance</span><b>20%</b></li><li><span>Coverage</span><b>20%</b></li><li><span>Slope &amp; terrain</span><b>15%</b></li><li><span>Coverage per dollar</span><b>20%</b></li></ul></div>
+
+<h2>All 23 models — details &amp; sources</h2>
+<div class="cards" id="cards">
+<article class="card" data-brand="Mammotion" data-name="mammotion luba 2 awd 5000">
+      <div class="card-head"><h3>Mammotion Luba 2 AWD 5000 <span class="badge">4.7</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS, all-wheel drive, dual-antenna positioning</p>
+      <p class="summary">Mammotion&#x27;s large all-wheel-drive flagship: rated to 5,000 m² and slopes up to 80% grade, the class leader for big, steep, or terraced lawns. Wire-free RTK setup.</p>
+      <p class="specs">40 cm cutting width; 25 to 70 mm cut height; brushless direct-drive blade discs. · Up to 5000 m², 80% slope. Estate lawns; Steep &amp; terraced.</p>
+      <p class="price">Price snapshot: <b>$2,899</b> at Mammotion Store (2026-08-24) · $0.58/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>4.9</b></li><li><span>Slope &amp; terrain</span><b>5.0</b></li><li><span>Coverage per dollar</span><b>4.7</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://support.mammotion.com/portal/en/kb/articles/luba-2-awd-series-specifications" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://us.mammotion.com/products/luba-2-awd-robot-lawn-mower" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="MOVA" data-name="mova lidax ultra 3000 awd">
+      <div class="card-head"><h3>MOVA LiDAX Ultra 3000 AWD <span class="badge">4.7</span></h3></div>
+      <p class="nav">Wire-free 360° 3D LiDAR with AI dual-vision, all-wheel drive</p>
+      <p class="summary">MOVA&#x27;s premium all-wheel-drive flagship: 360° LiDAR plus AI vision for large lawns up to 0.75 acre that are also steep (80% slopes) or shaded, wire-free and RTK-free, with 4G tracking built in.</p>
+      <p class="specs">40 cm cutting width; 30 to 99 mm cut height; 360° LiDAR mapping with all-wheel-drive traction. · Up to 3035 m², 80% slope. Large lawns; Steep &amp; terraced; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$2,399</b> at MOVA Store (2026-08-24) · $0.79/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>5.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>4.4</b></li><li><span>Slope &amp; terrain</span><b>5.0</b></li><li><span>Coverage per dollar</span><b>4.1</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://us.mova.tech/pages/mova-lidax-ultra-3000-awd" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://us.mova.tech/products/mova-lidax-ultra-3000-awd-robotic-lawn-mower" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="Dreame" data-name="dreame roboticmower a3 awd pro">
+      <div class="card-head"><h3>Dreame Roboticmower A3 AWD Pro <span class="badge">4.6</span></h3></div>
+      <p class="nav">Wire-free 360° 3D LiDAR with AI vision, all-wheel drive</p>
+      <p class="summary">Dreame&#x27;s do-it-all flagship: 360° LiDAR navigation that works under trees plus all-wheel drive for 80% slopes, for large lawns that are also steep or shaded.</p>
+      <p class="specs">40 cm cutting width; 30 to 100 mm cut height; 360° LiDAR mapping with all-wheel-drive traction. · Up to 2500 m², 80% slope. Large lawns; Steep &amp; terraced; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$2,249.99</b> at Dreame Yard Care Store (2026-08-24) · $0.9/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>5.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>4.2</b></li><li><span>Slope &amp; terrain</span><b>5.0</b></li><li><span>Coverage per dollar</span><b>3.7</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://yardcare.dreametech.com/products/a3-awd-pro-robot-lawn-mower" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Ecovacs" data-name="ecovacs goat a2000 lidar pro">
+      <div class="card-head"><h3>Ecovacs Goat A2000 LiDAR PRO <span class="badge">4.5</span></h3></div>
+      <p class="nav">Wire-free HoloScope 360 dual-LiDAR with AIVI 3D vision</p>
+      <p class="summary">Ecovacs&#x27; 2026 mid-flagship Goat for lawns up to half an acre: dual-LiDAR HoloScope mapping plus AI vision, a built-in edge trimmer, and 50% slope climbing, wire-free, sitting between the Goat O1200 and the A3000.</p>
+      <p class="specs">32.9 cm cutting width; 30 to 90 mm cut height; dual-LiDAR 3D mapping with a built-in edge trimmer. · Up to 2023 m², 50% slope. Mid-size lawns; Large lawns; Steep &amp; terraced; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$1,399</b> at Ecovacs Store (2026-08-24) · $0.69/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>5.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>4.0</b></li><li><span>Slope &amp; terrain</span><b>4.0</b></li><li><span>Coverage per dollar</span><b>4.4</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/ecovacs-goat-a2000-lidar-pro?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a2000-lidar-pro" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Ecovacs" data-name="ecovacs goat g1">
+      <div class="card-head"><h3>Ecovacs Goat G1 <span class="badge">4.3</span></h3></div>
+      <p class="nav">Wire-free LiDAR and 3D vision with UWB beacon positioning</p>
+      <p class="summary">Ecovacs&#x27; beacon-and-LiDAR robot that avoids the tree-cover weakness of satellite mowers, with strong AI obstacle avoidance and the ability to mow at night.</p>
+      <p class="specs">22 cm cutting width; 30 to 60 mm cut height; night mowing with vision. · Up to 1600 m², 45% slope. Mid-size lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$1,599</b> at Ecovacs Store (2026-08-24) · $1/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>5.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.8</b></li><li><span>Slope &amp; terrain</span><b>3.8</b></li><li><span>Coverage per dollar</span><b>3.4</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/ecovacs-goat-g1?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.ecovacs.com/au/goat-robotic-lawn-mower/goat-g1" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://www.ecovacs.com/us/goat-robotic-lawn-mower" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="Segway" data-name="segway navimow x330">
+      <div class="card-head"><h3>Segway Navimow X330 <span class="badge">4.3</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS with VisionFence AI camera and obstacle avoidance</p>
+      <p class="summary">Segway&#x27;s larger wire-free flagship for big lawns: fused RTK and AI vision for reliable positioning under tree cover, real-time obstacle avoidance, and multi-zone mapping.</p>
+      <p class="specs">23.7 cm cutting width; 20 to 70 mm cut height; multi-zone mapping. · Up to 3000 m², 50% slope. Large lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$2,299</b> at Segway Navimow Store (2026-08-24) · $0.77/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>4.3</b></li><li><span>Slope &amp; terrain</span><b>4.0</b></li><li><span>Coverage per dollar</span><b>4.1</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/segway-navimow-x330?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://navimow.com/pages/navimow-x3-specs" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://navimow.com/products/segway-navimow-x330" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="MOVA" data-name="mova lidax ultra 1000">
+      <div class="card-head"><h3>MOVA LiDAX Ultra 1000 <span class="badge">4.2</span></h3></div>
+      <p class="nav">Wire-free UltraView 2.0 360° 3D LiDAR with AI vision</p>
+      <p class="summary">The entry tier of MOVA&#x27;s wire-free LiDAX Ultra line: 360° LiDAR plus AI vision for lawns up to 0.25 acre, 45% slopes, a quiet 57 dB, and built-in 4G tracking, at $999 direct.</p>
+      <p class="specs">20 cm cutting width; 30 to 100 mm cut height; 360° LiDAR mapping at a quiet 57 dB. · Up to 1000 m², 45% slope. Small lawns; Steep &amp; terraced; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$999</b> at MOVA Store (2026-08-24) · $1/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>5.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.5</b></li><li><span>Slope &amp; terrain</span><b>3.8</b></li><li><span>Coverage per dollar</span><b>3.4</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/mova-lidax-ultra-1000?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Dreame" data-name="dreame a3 awd">
+      <div class="card-head"><h3>Dreame A3 AWD <span class="badge">4.0</span></h3></div>
+      <p class="nav">Wire-free OmniSense 3.0 360° 3D LiDAR with binocular AI vision, all-wheel drive</p>
+      <p class="summary">Dreame&#x27;s wire-free all-wheel-drive A3 AWD (the non-Pro): 360° LiDAR plus AI vision and 80% slope climbing for small-to-mid lawns, with a pre-installed 4G module for tracking.</p>
+      <p class="specs">20 cm cutting width; 30 to 100 mm cut height; 360° LiDAR mapping with all-wheel-drive traction. · Up to 1000 m², 80% slope. Small lawns; Mid-size lawns; Steep &amp; terraced; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$1,599.99</b> at Dreame Yard Care Store (2026-08-24) · $1.6/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>5.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.5</b></li><li><span>Slope &amp; terrain</span><b>5.0</b></li><li><span>Coverage per dollar</span><b>1.5</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/dreame-a3-awd?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://yardcare.dreametech.com/products/a3-awd-robot-lawn-mower" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="EcoFlow" data-name="ecoflow blade">
+      <div class="card-head"><h3>EcoFlow Blade <span class="badge">4.0</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS with an optional lawn-sweeping module</p>
+      <p class="summary">EcoFlow&#x27;s design-forward wire-free mower for large lawns: RTK positioning plus an optional sweeper that clears debris, from a brand better known for its power stations.</p>
+      <p class="specs">26 cm cutting width; 20 to 76 mm cut height; systematic mowing, with an optional sweeping attachment. · Up to 2800 m², 27% slope. Large lawns.</p>
+      <p class="price">Price snapshot: <b>$2,899</b> at EcoFlow Store (2026-08-24) · $1.04/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>4.3</b></li><li><span>Slope &amp; terrain</span><b>3.2</b></li><li><span>Coverage per dollar</span><b>3.3</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/ecoflow-blade?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.ecoflow.com/au/blade-robotic-lawn-mower" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Sunseeker" data-name="sunseeker x3 plus">
+      <div class="card-head"><h3>Sunseeker X3 Plus <span class="badge">4.0</span></h3></div>
+      <p class="nav">Wire-free RTK-GNSS with VSLAM camera vision (AONavi)</p>
+      <p class="summary">Sunseeker&#x27;s value wire-free mower for mid-size lawns: RTK plus camera vision at a sub-$1,000 price, one of the cheapest ways into vision-assisted wire-free mowing.</p>
+      <p class="specs">20.3 cm cutting width; 40 to 80 mm cut height; vision-assisted systematic mowing. · Up to 1200 m², 30% slope. Mid-size lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$999</b> at Sunseeker Store (2026-08-24) · $0.83/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.6</b></li><li><span>Slope &amp; terrain</span><b>3.3</b></li><li><span>Coverage per dollar</span><b>3.9</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/sunseeker-x3-plus?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://shopsunseekertech.com/products/x3-plus-wireless-robot-lawn-mower-l-0-3-acre" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Worx" data-name="worx landroid vision wr220">
+      <div class="card-head"><h3>Worx Landroid Vision WR220 <span class="badge">4.0</span></h3></div>
+      <p class="nav">Wire-free camera-based AI vision (boundaryless)</p>
+      <p class="summary">Worx&#x27;s boundaryless Landroid Vision (WR220) for lawns up to half an acre: it navigates purely by AI camera vision, no wire and no mapping, cutting an 8.7-inch width, at $799.99.</p>
+      <p class="specs">22 cm cutting width; 40 to 90 mm cut height; camera-vision guided with a self-leveling floating deck. · Up to 2023 m², 30% slope. Small lawns; Mid-size lawns; Large lawns.</p>
+      <p class="price">Price snapshot: <b>$999.99</b> at Worx Store (2026-08-24) · $0.49/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>3.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>4.0</b></li><li><span>Slope &amp; terrain</span><b>3.3</b></li><li><span>Coverage per dollar</span><b>5.0</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/worx-landroid-vision-wr220?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.worx.com/landroid-vision-20v-boundaryless-robotic-lawn-mower-1-2-acre-wr220.html" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Mammotion" data-name="mammotion yuka 1500">
+      <div class="card-head"><h3>Mammotion Yuka 1500 <span class="badge">3.9</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS with front-camera vision and optional sweeping</p>
+      <p class="summary">Mammotion&#x27;s vision-assisted mower for mid-size lawns, and the rare robot that can collect clippings and leaves with its sweeping accessory rather than only mulching.</p>
+      <p class="specs">32 cm cutting width; 30 to 100 mm cut height; optional grass-sweeping module. · Up to 1500 m², 45% slope. Mid-size lawns; Shaded &amp; tree cover; Cuts and collects.</p>
+      <p class="price">Price snapshot: <b>$1,799</b> at Mammotion Store (2026-08-24) · $1.2/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.7</b></li><li><span>Slope &amp; terrain</span><b>3.8</b></li><li><span>Coverage per dollar</span><b>2.8</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/mammotion-yuka-1500?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://eu.mammotion.com/products/yuka-robot-lawn-mower" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Dreame" data-name="dreame roboticmower a1">
+      <div class="card-head"><h3>Dreame Roboticmower A1 <span class="badge">3.8</span></h3></div>
+      <p class="nav">Wire-free 3D LiDAR navigation with AI vision (OmniSense)</p>
+      <p class="summary">Dreame&#x27;s LiDAR-first robot mower: it maps the yard in 3D and avoids obstacles without depending on a clear-sky satellite lock, a strong choice for tree-covered mid-to-large lawns.</p>
+      <p class="specs">22 cm cutting width; 30 to 70 mm cut height; LiDAR-mapped systematic mowing with obstacle avoidance. · Up to 2000 m², 45% slope. Large lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$2,099</b> at Dreame Yard Care Store (2026-08-24) · $1.05/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.5</b></li><li><span>Obstacle avoidance</span><b>3.3</b></li><li><span>Coverage</span><b>4.0</b></li><li><span>Slope &amp; terrain</span><b>3.8</b></li><li><span>Coverage per dollar</span><b>3.2</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/dreame-roboticmower-a1?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://global.dreametech.com/products/roboticmower-a1" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Ecovacs" data-name="ecovacs goat o1200">
+      <div class="card-head"><h3>Ecovacs Goat O1200 <span class="badge">3.8</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS with TrueMapping and panoramic vision</p>
+      <p class="summary">The RTK generation of the Goat line: quicker mapping than the beacon G1 on open lawns, with panoramic-vision obstacle avoidance and app multi-zone control.</p>
+      <p class="specs">22 cm cutting width; 30 to 80 mm cut height; multi-zone mapping; obstacle avoidance. · Up to 1200 m², 45% slope. Mid-size lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$1,499</b> at Ecovacs Store (2026-08-24) · $1.25/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.6</b></li><li><span>Slope &amp; terrain</span><b>3.8</b></li><li><span>Coverage per dollar</span><b>2.6</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/ecovacs-goat-o1200?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.ecovacs.com/uk/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://www.ecovacs.com/us/goat-robotic-lawn-mower" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="Mammotion" data-name="mammotion luba 2 awd 1000">
+      <div class="card-head"><h3>Mammotion Luba 2 AWD 1000 <span class="badge">3.8</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS, all-wheel drive, dual-antenna positioning</p>
+      <p class="summary">The all-wheel-drive Luba 2 for mid-size lawns that are steep or terraced: 80% slope capability in a package rated to roughly 1,000 m². Wire-free RTK.</p>
+      <p class="specs">40 cm cutting width; 25 to 70 mm cut height; brushless direct-drive blade discs. · Up to 1000 m², 80% slope. Mid-size lawns; Steep &amp; terraced.</p>
+      <p class="price">Price snapshot: <b>$1,599</b> at Mammotion Store (2026-08-24) · $1.6/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.5</b></li><li><span>Slope &amp; terrain</span><b>5.0</b></li><li><span>Coverage per dollar</span><b>1.5</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/mammotion-luba-2-awd-1000?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://support.mammotion.com/portal/en/kb/articles/luba-2-awd-series-specifications" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://us.mammotion.com/products/luba-2-awd-robot-lawn-mower" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="Mammotion" data-name="mammotion yuka mini">
+      <div class="card-head"><h3>Mammotion Yuka Mini <span class="badge">3.8</span></h3></div>
+      <p class="nav">Wire-free vision-first navigation for small lawns</p>
+      <p class="summary">Mammotion&#x27;s compact wire-free robot for small city lawns and courtyards: vision-led navigation, easy app setup, and a lower entry price.</p>
+      <p class="specs">19 cm cutting width; 20 to 60 mm cut height; app-set virtual boundaries; low-noise operation. · Up to 809 m², 50% slope. Small lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$999</b> at Mammotion Store (2026-08-24) · $1.23/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.4</b></li><li><span>Slope &amp; terrain</span><b>4.0</b></li><li><span>Coverage per dollar</span><b>2.7</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/mammotion-yuka-mini?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://us.mammotion.com/products/yuka-mini-robot-lawn-mower" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Segway" data-name="segway navimow i110n">
+      <div class="card-head"><h3>Segway Navimow i110N <span class="badge">3.8</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS positioning (Exact Fusion Locating System)</p>
+      <p class="summary">The mid-size Navimow for lawns up to roughly 1,000 m²: wire-free RTK setup, systematic mowing pattern, and anti-theft with GPS tracking.</p>
+      <p class="specs">18 cm cutting width; 50 to 90 mm cut height; about 58 dB. · Up to 1012 m², 30% slope. Mid-size lawns.</p>
+      <p class="price">Price snapshot: <b>$1,099</b> at Segway Navimow Store (2026-08-24) · $1.09/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.5</b></li><li><span>Slope &amp; terrain</span><b>3.3</b></li><li><span>Coverage per dollar</span><b>3.1</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/segway-navimow-i110n?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://navimow.com/pages/navimow-i-specs" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://navimow.com/products/navimow-i110" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="Worx" data-name="worx landroid vision cloud">
+      <div class="card-head"><h3>Worx Landroid Vision Cloud <span class="badge">3.8</span></h3></div>
+      <p class="nav">Wire-free RTK Cloud satellite positioning with camera vision</p>
+      <p class="summary">Worx&#x27;s wire-free, camera-guided Landroid for small-to-mid lawns: it reads the grass to cut cleanly to the edge, at a lower price than the premium RTK brands.</p>
+      <p class="specs">22 cm cutting width; 40 to 90 mm cut height; camera-guided cutting to the lawn edge. · Up to 1012 m², 35% slope. Mid-size lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$1,199</b> at Worx Store (2026-08-24) · $1.18/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.5</b></li><li><span>Slope &amp; terrain</span><b>3.5</b></li><li><span>Coverage per dollar</span><b>2.8</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/worx-landroid-vision-cloud?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.worx.com/landroid-vision-cloud.html" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Husqvarna" data-name="husqvarna automower 435 iq awd">
+      <div class="card-head"><h3>Husqvarna Automower 435 iQ AWD <span class="badge">3.7</span></h3></div>
+      <p class="nav">Wire-free EPOS RTK-GNSS, all-wheel drive for steep terrain</p>
+      <p class="summary">Husqvarna&#x27;s wire-free all-wheel-drive Automower for large, steep estates: rated to 5,300 m² and 70% slopes on satellite positioning, with the reliability of the category&#x27;s leading brand.</p>
+      <p class="specs">22 cm cutting width; 30 to 70 mm cut height; systematic mowing with articulated all-wheel-drive chassis. · Up to 5261 m², 70% slope. Estate lawns; Steep &amp; terraced.</p>
+      <p class="price">Price snapshot: <b>$4,999</b> at Husqvarna Store (2026-08-24) · $0.95/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>3.4</b></li><li><span>Obstacle avoidance</span><b>2.0</b></li><li><span>Coverage</span><b>5.0</b></li><li><span>Slope &amp; terrain</span><b>4.7</b></li><li><span>Coverage per dollar</span><b>3.6</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/husqvarna-automower-435-iq-awd?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.husqvarna.com/us/robotic-lawn-mowers/automower-435-iq-awd/" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Segway" data-name="segway navimow i105e">
+      <div class="card-head"><h3>Segway Navimow i105E <span class="badge">3.4</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS positioning (Exact Fusion Locating System)</p>
+      <p class="summary">Segway&#x27;s entry wire-free robot mower for small yards: quick app-mapped setup, RTK precision, and quiet cutting. A good first robot mower for compact lawns.</p>
+      <p class="specs">18 cm cutting width; 20 to 60 mm cut height; about 58 dB. · Up to 506 m², 30% slope. Small lawns.</p>
+      <p class="price">Price snapshot: <b>$799</b> at Segway Navimow Store (2026-08-24) · $1.58/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>4.0</b></li><li><span>Obstacle avoidance</span><b>5.0</b></li><li><span>Coverage</span><b>3.1</b></li><li><span>Slope &amp; terrain</span><b>3.3</b></li><li><span>Coverage per dollar</span><b>1.6</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/segway-navimow-i105e?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://navimow.com/pages/navimow-i-specs" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://navimow.com/products/navimow-i105" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="Husqvarna" data-name="husqvarna automower 410 iq">
+      <div class="card-head"><h3>Husqvarna Automower 410 iQ <span class="badge">3.0</span></h3></div>
+      <p class="nav">Wire-free EPOS RTK-GNSS satellite positioning (no boundary wire)</p>
+      <p class="summary">The wire-free entry to Husqvarna&#x27;s market-leading Automower line: EPOS satellite positioning and Husqvarna&#x27;s build reliability for mid-to-large lawns, with no perimeter wire to bury.</p>
+      <p class="specs">23.9 cm cutting width; 25 to 100 mm cut height; Husqvarna&#x27;s systematic parallel mowing pattern. · Up to 2023 m², 45% slope. Large lawns.</p>
+      <p class="price">Price snapshot: <b>$2,999</b> at Husqvarna Store (2026-08-24) · $1.48/m²</p>
+      <ul class="subscores"><li><span>Navigation</span><b>3.4</b></li><li><span>Obstacle avoidance</span><b>2.0</b></li><li><span>Coverage</span><b>4.0</b></li><li><span>Slope &amp; terrain</span><b>3.8</b></li><li><span>Coverage per dollar</span><b>1.9</b></li></ul>
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/husqvarna-automower-410-iq?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.husqvarna.com/us/robotic-lawn-mowers/automower-410-iq/" rel="noopener nofollow">Coverage source ↗</a></p>
+    </article>
+<article class="card" data-brand="Ecovacs" data-name="ecovacs goat a3000 lidar">
+      <div class="card-head"><h3>Ecovacs Goat A3000 LiDAR <span class="badge badge-na">Announced</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS with LiDAR and panoramic vision</p>
+      <p class="summary">Ecovacs&#x27; announced large-lawn flagship pairing RTK, LiDAR, and panoramic vision. Not yet widely available; specs and price may change at launch.</p>
+      <p class="specs">33 cm cutting width; 30 to 90 mm cut height; multi-zone mapping; all-terrain wheels. · Up to 3035 m², 50% slope. Large lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$1,910</b> at Ecovacs Store (2026-08-24) · $0.63/m²</p>
+      
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/ecovacs-goat-a3000-lidar?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/bundle-goat-a3000-lidar-pro-garage-blade-kit" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+<article class="card" data-brand="Segway" data-name="segway navimow x390">
+      <div class="card-head"><h3>Segway Navimow X390 <span class="badge badge-na">Announced</span></h3></div>
+      <p class="nav">Wire-free RTK GNSS with AI vision, large-lawn flagship</p>
+      <p class="summary">Segway&#x27;s announced estate-scale Navimow, rated to roughly 10,000 m² on the fused RTK-and-vision X3 platform. Not yet widely available; specs may change at launch.</p>
+      <p class="specs">23.7 cm cutting width; 20 to 70 mm cut height; multi-zone mapping. · Up to 10118 m², 50% slope. Estate lawns; Shaded &amp; tree cover.</p>
+      <p class="price">Price snapshot: <b>$4,499</b> at Segway Navimow Store (2026-08-24) · $0.44/m²</p>
+      
+      <p class="links"><a class="cta" href="https://bestrobotmower.co/mowers/segway-navimow-x390?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=mower-dataset" rel="noopener">Full review &amp; live price on BestRobotMower.co →</a> <a href="https://navimow.com/pages/navimow-x3-specs" rel="noopener nofollow">Coverage source ↗</a> · <a href="https://navimow.com/products/segway-navimow-x390" rel="noopener nofollow">Price source ↗</a></p>
+    </article>
+</div>
+
+<footer>
+  <p>Dataset compiled and scored by <a href="https://bestrobotmower.co/?utm_source=github&utm_medium=pages&utm_campaign=mower-dataset" rel="noopener"><b>BestRobotMower.co</b></a>, an independent robot-mower comparison site. Machine-readable <a href="https://raw.githubusercontent.com/yumaheymans/robot-lawn-mower-specs/main/data/mowers.csv" rel="noopener">CSV</a> and <a href="https://raw.githubusercontent.com/yumaheymans/robot-lawn-mower-specs/main/data/mowers.json" rel="noopener">JSON</a> in the <a href="https://github.com/yumaheymans/robot-lawn-mower-specs" rel="noopener">source repository</a>.</p>
+  <p>Licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a> — reuse with attribution to BestRobotMower.co. BestRobotMower.co may earn an affiliate commission on some outbound retail links; scores and specs are independent of commercial relationships.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var tbl=document.getElementById('tbl'), tb=tbl.tBodies[0];
+  var rows=[].slice.call(tb.rows), cards=[].slice.call(document.getElementById('cards').children);
+  var q=document.getElementById('q'), fb=document.getElementById('brand'), fs=document.getElementById('status');
+  function apply(){
+    var t=q.value.trim().toLowerCase(), b=fb.value, s=fs.value;
+    rows.forEach(function(r){
+      var ok=(!t||r.dataset.name.indexOf(t)>-1||r.dataset.brand.toLowerCase().indexOf(t)>-1)&&(!b||r.dataset.brand===b)&&(!s||r.dataset.status===s);
+      r.style.display=ok?'':'none';
+    });
+    cards.forEach(function(c){
+      var ok=(!t||c.dataset.name.indexOf(t)>-1||c.dataset.brand.toLowerCase().indexOf(t)>-1)&&(!b||c.dataset.brand===b);
+      c.style.display=ok?'':'none';
+    });
+  }
+  q.addEventListener('input',apply); fb.addEventListener('change',apply); fs.addEventListener('change',apply);
+  var ths=[].slice.call(tbl.tHead.rows[0].cells);
+  ths.forEach(function(th,i){
+    th.addEventListener('click',function(){
+      var asc=th.getAttribute('aria-sort')==='ascending'; var dir=asc?-1:1;
+      ths.forEach(function(o){o.removeAttribute('aria-sort')});
+      th.setAttribute('aria-sort',asc?'descending':'ascending');
+      rows.sort(function(a,a2){
+        var x=a.cells[i], y=a2.cells[i];
+        var xs=x.dataset.sort, ys=y.dataset.sort;
+        if(xs!==undefined&&ys!==undefined) return (parseFloat(xs)-parseFloat(ys))*dir;
+        return x.textContent.localeCompare(y.textContent)*dir;
+      });
+      rows.forEach(function(r){tb.appendChild(r)});
+    });
+  });
+})();
+</script>
+</body>
+</html>

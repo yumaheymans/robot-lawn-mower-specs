@@ -11,6 +11,12 @@ Every spec links back to the manufacturer source that proves it, and every score
 those specs (no user polls, no opinion). Released under **[CC BY 4.0](LICENSE)** so you can use it freely
 with attribution.
 
+## 🔎 Explore it in your browser
+
+**[Interactive spec explorer → yumaheymans.github.io/robot-lawn-mower-specs](https://yumaheymans.github.io/robot-lawn-mower-specs/)**
+is the human-readable companion to the CSV/JSON below: a searchable, sortable table of all 23 models with the
+0-5 score, specs, dated price snapshots, and a link to each model's cited write-up.
+
 > **Why this exists:** there was no open, structured spec table for robot mowers anywhere. Robotics hobbyists,
 > Home Assistant tinkerers, journalists, and buyers kept re-scraping the same manufacturer PDFs. This is that
 > table, kept honest and cited.
