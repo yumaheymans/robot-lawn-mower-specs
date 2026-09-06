@@ -11,6 +11,14 @@ Every spec links back to the manufacturer source that proves it, and every score
 those specs (no user polls, no opinion). Released under **[CC BY 4.0](LICENSE)** so you can use it freely
 with attribution.
 
+<p align="center">
+  <a href="https://bestrobotmower.co/?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset">
+    <img src="https://yumaheymans.github.io/robot-lawn-mower-specs/pin-lawn-guide.jpg"
+         alt="Best robot mower for every lawn: the derived pick for most lawns, small lawns, large lawns, steep or terraced ground, shaded yards and best value, each with rated coverage, navigation type and price"
+         width="360">
+  </a>
+</p>
+
 ## 🔎 Explore it in your browser
 
 **[Interactive spec explorer → yumaheymans.github.io/robot-lawn-mower-specs](https://yumaheymans.github.io/robot-lawn-mower-specs/)**
