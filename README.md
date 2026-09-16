@@ -25,9 +25,25 @@ with attribution.
 is the human-readable companion to the CSV/JSON below: a searchable, sortable table of all 23 models with the
 0-5 score, specs, dated price snapshots, and a link to each model's cited write-up.
 
+**On the site:** the canonical, always-current version lives at
+**[bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset)**,
+with a live machine-readable feed at
+[`/api/dataset/mowers.json`](https://bestrobotmower.co/api/dataset/mowers.json) and
+[`/api/dataset/mowers.csv`](https://bestrobotmower.co/api/dataset/mowers.csv) (CORS-open, refreshed with the site).
+The files in this repo are a versioned snapshot for offline and reproducible use.
+
 > **Why this exists:** there was no open, structured spec table for robot mowers anywhere. Robotics hobbyists,
 > Home Assistant tinkerers, journalists, and buyers kept re-scraping the same manufacturer PDFs. This is that
 > table, kept honest and cited.
+
+## How to cite
+
+CC BY 4.0 just asks for credit. If you use this data in an article, app, video, or paper, please attribute:
+
+> BestRobotMower.co. *Robot Lawn Mower Specs & Scores* (open dataset, CC BY 4.0). https://bestrobotmower.co/dataset
+
+GitHub's **"Cite this repository"** button (top of the sidebar) generates the same in APA or BibTeX from
+[`CITATION.cff`](CITATION.cff). Each release is a fixed, citable snapshot of the data on a given date.
 
 ## Affiliate disclosure
 
