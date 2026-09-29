@@ -2,8 +2,8 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](LICENSE)
 
-An open, machine-readable dataset of **23 wire-free and RTK robot lawn mowers** across **9 brands**
-(Dreame, EcoFlow, Ecovacs, Husqvarna, MOVA, Mammotion, Segway, Sunseeker, Worx), with cited specs, dated price snapshots, and a transparent **0-5 BestRobotMower Score**
+An open, machine-readable dataset of **39 wire-free robot lawn mowers** across **9 brands**
+(Dreame, EcoFlow, Ecovacs, Husqvarna, Mammotion, MOVA, Segway, Sunseeker, Worx), with cited specs, dated prices, and a transparent **0-5 BestRobotMower Score**
 for every shipping model.
 
 Compiled and computed by **[BestRobotMower.co](https://bestrobotmower.co/?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset)**, an independent robot-mower comparison site.
@@ -11,19 +11,11 @@ Every spec links back to the manufacturer source that proves it, and every score
 those specs (no user polls, no opinion). Released under **[CC BY 4.0](LICENSE)** so you can use it freely
 with attribution.
 
-<p align="center">
-  <a href="https://bestrobotmower.co/?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset">
-    <img src="https://yumaheymans.github.io/robot-lawn-mower-specs/pin-lawn-guide.jpg"
-         alt="Best robot mower for every lawn: the derived pick for most lawns, small lawns, large lawns, steep or terraced ground, shaded yards and best value, each with rated coverage, navigation type and price"
-         width="360">
-  </a>
-</p>
-
 ## 🔎 Explore it in your browser
 
 **[Interactive spec explorer → yumaheymans.github.io/robot-lawn-mower-specs](https://yumaheymans.github.io/robot-lawn-mower-specs/)**
-is the human-readable companion to the CSV/JSON below: a searchable, sortable table of all 23 models with the
-0-5 score, specs, dated price snapshots, and a link to each model's cited write-up.
+is the human-readable companion to the CSV/JSON below: a searchable, sortable table of all 39 models with the
+0-5 score, specs, dated prices, and a link to each model's cited write-up.
 
 **On the site:** the canonical, always-current version lives at
 **[bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset)**,
@@ -56,13 +48,14 @@ influenced by affiliate relationships.
 
 | File | Format | Rows |
 |---|---|---|
-| [`data/mowers.csv`](data/mowers.csv) | CSV (spreadsheet-friendly) | 23 |
-| [`data/mowers.json`](data/mowers.json) | JSON (with dataset metadata + methodology block) | 23 |
+| [`data/mowers.csv`](data/mowers.csv) | CSV (spreadsheet-friendly) | 39 |
+| [`data/mowers.json`](data/mowers.json) | JSON (with dataset metadata) | 39 |
+| [`CHANGELOG.md`](CHANGELOG.md) | What changed in each release | n/a |
 | [`methodology.md`](methodology.md) | The full 0-5 scoring rubric | n/a |
 
-- **21 shipping** models (buyable now, scored)
-- **2 announced** models (revealed, not yet widely available, unscored)
-- Prices last verified: **2026-08-24**
+- **39 shipping** models (on sale now, scored)
+- Prices as of **2026-09-29**: 22 of the 39 headline prices are the brand store's live price read from its own
+  product feed; the rest were checked by hand on the date in `price_as_of`.
 
 ## Schema
 
@@ -70,35 +63,41 @@ influenced by affiliate relationships.
 |---|---|
 | `brand` | Manufacturer (e.g. Segway, Mammotion). |
 | `model` | Full model name. |
-| `status` | `shipping` (buyable now) or `announced` (revealed, not yet widely available). |
+| `status` | `shipping` (on sale now) or `announced` (revealed, not yet widely available). |
 | `release_year` | Year the model shipped, or was announced. |
-| `navigation_type` | Compact navigation class: `RTK GNSS`, `RTK + Vision`, `LiDAR + Vision`. |
-| `navigation_detail` | One-line description of the positioning/boundary system. |
-| `all_wheel_drive` | Whether the model is all-wheel drive (matters on slopes/rough terrain). |
+| `navigation_type` | Compact navigation class, e.g. `RTK GNSS`, `RTK + Vision`, `LiDAR + Vision`, `LiDAR + RTK + Vision`, `Vision`. |
+| `navigation_detail` | One-line description of the positioning and boundary system. |
+| `all_wheel_drive` | Whether the model is all-wheel drive (matters on slopes and rough ground). |
 | `max_coverage_m2` | Manufacturer-rated maximum lawn area, in square metres. |
 | `max_slope_pct` | Manufacturer-rated maximum slope, in percent grade. |
-| `cutting_spec` | Cutting width, cut-height range, and noise where published. |
-| `coverage_tiers` | Variants in the model family and the area each covers. |
-| `lawn_size_class` | The lawn-size bucket(s) this model targets. |
-| `price_snapshot_usd` | Cheapest tracked retail price (USD) at `price_snapshot_date`. A DATED SNAPSHOT, not a live price. |
-| `price_snapshot_provider` | Retailer the snapshot price was tracked from. |
-| `price_snapshot_date` | Date the price snapshot was verified. |
-| `price_per_m2_usd` | price_snapshot_usd ÷ max_coverage_m2, a rough value indicator. |
-| `bestrobotmower_score` | Transparent 0-5 BestRobotMower Score (shipping models only). See methodology below. |
+| `cutting_width_cm` | Cutting width, in cm. |
+| `cut_height_min_mm` | Lowest cut height, in mm. |
+| `cut_height_max_mm` | Highest cut height, in mm. |
+| `battery_runtime_min` | Rated working time per charge, in minutes, where the maker states one. |
+| `obstacle_avoidance` | The obstacle-detection system, from the maker's own description. |
+| `price_usd` | Headline price in USD: the cheapest way to buy it from a tracked seller that is not sold out. |
+| `price_provider` | The seller of that price. |
+| `price_per_m2_usd` | price_usd divided by max_coverage_m2, a rough value indicator. |
+| `bestrobotmower_score` | Transparent 0-5 BestRobotMower Score (shipping models). See the methodology below. |
 | `score_navigation` | Sub-score, Navigation & mapping axis (weight 0.25). |
 | `score_obstacle_avoidance` | Sub-score, Obstacle avoidance axis (weight 0.20). |
 | `score_coverage` | Sub-score, Coverage axis (weight 0.20). |
 | `score_slope` | Sub-score, Slope & terrain axis (weight 0.15). |
 | `score_coverage_per_dollar` | Sub-score, Coverage per dollar axis (weight 0.20). |
-| `model_page_url` | Link to the full model page on BestRobotMower.co, with cited sources. |
+| `model_page_url` | The model's page on BestRobotMower.co, with every figure's source. |
 | `coverage_source_url` | Manufacturer source for the coverage figure. |
 | `slope_source_url` | Manufacturer source for the slope figure. |
-| `price_source_url` | Retailer source proving the price snapshot. |
+| `price_source_url` | The page that proves the price. |
 | `summary` | One-line plain-language summary of the model. |
+| `price_as_of` | Date the price was last confirmed (YYYY-MM-DD): the live store read, else the hand check. |
+| `price_is_live` | `true` when price_usd is the brand store's live price read from its own product feed. |
+| `in_stock` | The price seller's stock from its live feed: `true`, `false`, or empty when unknown. |
 
-> **Price fields are dated snapshots**, not live prices. For the current price, open the `model_page_url` or
-> `price_source_url`. Robot-mower prices move often; treat `price_snapshot_usd` as "cheapest tracked at
-> `price_snapshot_date`."
+> The JSON rows also carry `slug`, the model's URL slug (the last segment of `model_page_url`).
+
+> **Prices are dated.** Each row says when its price was confirmed (`price_as_of`) and whether it is a live
+> brand-store price (`price_is_live`). Robot-mower prices move often; for today's price open the
+> `model_page_url` or `price_source_url`.
 
 ## The BestRobotMower Score (0-5)
 
@@ -117,49 +116,62 @@ exact formulas: [`methodology.md`](methodology.md) and [https://bestrobotmower.c
 
 ## Shipping models (scored)
 
-| Model | Brand | Navigation | Max coverage | Max slope | AWD | Price (snapshot) | Score |
+| Model | Brand | Navigation | Max coverage | Max slope | AWD | Price | Score |
 |---|---|---|---|---|---|---|---|
-| [Mammotion Luba 2 AWD 5000](https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK GNSS | 5,000 m² | 80% | Yes | $2,899 | **4.7** |
-| [MOVA LiDAX Ultra 3000 AWD](https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 3,035 m² | 80% | Yes | $2,399 | **4.7** |
-| [Dreame Roboticmower A3 AWD Pro](https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 2,500 m² | 80% | Yes | $2,249.99 | **4.6** |
-| [Ecovacs Goat A2000 LiDAR PRO](https://bestrobotmower.co/mowers/ecovacs-goat-a2000-lidar-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 2,023 m² | 50% | No | $1,399 | **4.5** |
-| [Ecovacs Goat G1](https://bestrobotmower.co/mowers/ecovacs-goat-g1?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 1,600 m² | 45% | No | $1,599 | **4.3** |
-| [Segway Navimow X330](https://bestrobotmower.co/mowers/segway-navimow-x330?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 3,000 m² | 50% | No | $2,299 | **4.3** |
-| [MOVA LiDAX Ultra 1000](https://bestrobotmower.co/mowers/mova-lidax-ultra-1000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 1,000 m² | 45% | No | $999 | **4.2** |
-| [Dreame A3 AWD](https://bestrobotmower.co/mowers/dreame-a3-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 1,000 m² | 80% | Yes | $1,599.99 | **4** |
-| [EcoFlow Blade](https://bestrobotmower.co/mowers/ecoflow-blade?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | EcoFlow | RTK GNSS | 2,800 m² | 27% | No | $2,899 | **4** |
-| [Sunseeker X3 Plus](https://bestrobotmower.co/mowers/sunseeker-x3-plus?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Sunseeker | RTK + Vision | 1,200 m² | 30% | No | $999 | **4** |
-| [Worx Landroid Vision WR220](https://bestrobotmower.co/mowers/worx-landroid-vision-wr220?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Worx | Vision | 2,023 m² | 30% | No | $999.99 | **4** |
-| [Mammotion Yuka 1500](https://bestrobotmower.co/mowers/mammotion-yuka-1500?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK + Vision | 1,500 m² | 45% | No | $1,799 | **3.9** |
-| [Dreame Roboticmower A1](https://bestrobotmower.co/mowers/dreame-roboticmower-a1?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 2,000 m² | 45% | No | $2,099 | **3.8** |
+| [Dreame Roboticmower A3 AWD Pro](https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 2,500 m² | 80% | Yes | $1,699.99 | **4.6** |
+| [Mammotion Luba 2 AWD 5000](https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK GNSS | 5,000 m² | 80% | Yes | $2,299 | **4.6** |
+| [Mammotion Luba 3 AWD](https://bestrobotmower.co/mowers/mammotion-luba-3-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | LiDAR + RTK + Vision | 3,000 m² | 80% | Yes | $2,109 | **4.6** |
+| [MOVA LiDAX Ultra 3000 AWD](https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 3,035 m² | 80% | Yes | $2,199 | **4.6** |
+| [Segway Navimow X390](https://bestrobotmower.co/mowers/segway-navimow-x390?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 10,118 m² | 50% | No | $4,499 | **4.6** |
+| [Segway Navimow X350](https://bestrobotmower.co/mowers/segway-navimow-x350?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 6,070 m² | 50% | No | $2,799 | **4.5** |
+| [Segway Navimow X4](https://bestrobotmower.co/mowers/segway-navimow-x4?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 4,047 m² | 84% | Yes | $2,499 | **4.5** |
+| [Ecovacs Goat A2000 LiDAR PRO](https://bestrobotmower.co/mowers/ecovacs-goat-a2000-lidar-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 2,023 m² | 50% | No | $1,452 | **4.4** |
+| [Ecovacs Goat A3000 LiDAR PRO](https://bestrobotmower.co/mowers/ecovacs-goat-a3000-lidar-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 3,035 m² | 50% | No | $2,499.99 | **4.4** |
+| [MOVA LiDAX Ultra 2000](https://bestrobotmower.co/mowers/mova-lidax-ultra-2000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 2,000 m² | 45% | No | $1,099 | **4.4** |
+| [MOVA LiDAX Ultra 2000 AWD](https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 2,000 m² | 80% | Yes | $1,799 | **4.4** |
+| [Ecovacs Goat A3000 LiDAR](https://bestrobotmower.co/mowers/ecovacs-goat-a3000-lidar?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 3,035 m² | 50% | No | $2,999.99 | **4.3** |
+| [Mammotion Luba Mini 2 AWD](https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | LiDAR + Vision | 1,500 m² | 80% | Yes | $1,699 | **4.3** |
+| [Segway Navimow X330](https://bestrobotmower.co/mowers/segway-navimow-x330?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 4,047 m² | 50% | No | $2,299 | **4.3** |
+| [Ecovacs Goat G1](https://bestrobotmower.co/mowers/ecovacs-goat-g1?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 1,600 m² | 45% | No | $1,599 | **4.2** |
+| [Sunseeker X5](https://bestrobotmower.co/mowers/sunseeker-x5?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Sunseeker | RTK + Vision | 2,000 m² | 60% | Yes | $1,499 | **4.2** |
+| [Dreame A3 AWD](https://bestrobotmower.co/mowers/dreame-a3-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 1,000 m² | 80% | Yes | $1,399.99 | **4.1** |
+| [MOVA LiDAX Pro 800](https://bestrobotmower.co/mowers/mova-lidax-pro-800?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 800 m² | 45% | No | $849 | **4.1** |
+| [MOVA LiDAX Ultra 1000](https://bestrobotmower.co/mowers/mova-lidax-ultra-1000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 1,000 m² | 45% | No | $999 | **4.1** |
+| [Segway Navimow i2 LiDAR](https://bestrobotmower.co/mowers/segway-navimow-i2-lidar?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | LiDAR + Vision | 1,497 m² | 45% | No | $1,599 | **4.1** |
+| [Sunseeker S4](https://bestrobotmower.co/mowers/sunseeker-s4?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Sunseeker | LiDAR + Vision | 1,000 m² | 42% | No | $999.99 | **4.1** |
+| [Sunseeker X3 Plus](https://bestrobotmower.co/mowers/sunseeker-x3-plus?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Sunseeker | RTK + Vision | 1,200 m² | 30% | No | $899.99 | **4.0** |
+| [EcoFlow Blade](https://bestrobotmower.co/mowers/ecoflow-blade?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | EcoFlow | RTK GNSS | 2,800 m² | 27% | No | $2,899 | **3.9** |
+| [Ecovacs Goat O1000 LiDAR PRO](https://bestrobotmower.co/mowers/ecovacs-goat-o1000-lidar-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 1,012 m² | 45% | No | $1,499.99 | **3.9** |
+| [Mammotion Yuka Mini 2](https://bestrobotmower.co/mowers/mammotion-yuka-mini-2?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | LiDAR + Vision | 1,000 m² | 45% | No | $1,399 | **3.9** |
 | [Ecovacs Goat O1200](https://bestrobotmower.co/mowers/ecovacs-goat-o1200?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | RTK + Vision | 1,200 m² | 45% | No | $1,499 | **3.8** |
-| [Mammotion Luba 2 AWD 1000](https://bestrobotmower.co/mowers/mammotion-luba-2-awd-1000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK GNSS | 1,000 m² | 80% | Yes | $1,599 | **3.8** |
-| [Mammotion Yuka Mini](https://bestrobotmower.co/mowers/mammotion-yuka-mini?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK + Vision | 809 m² | 50% | No | $999 | **3.8** |
+| [Mammotion Yuka 1500](https://bestrobotmower.co/mowers/mammotion-yuka-1500?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK + Vision | 1,500 m² | 45% | No | $1,799 | **3.8** |
 | [Segway Navimow i110N](https://bestrobotmower.co/mowers/segway-navimow-i110n?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK GNSS | 1,012 m² | 30% | No | $1,099 | **3.8** |
 | [Worx Landroid Vision Cloud](https://bestrobotmower.co/mowers/worx-landroid-vision-cloud?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Worx | RTK + Vision | 1,012 m² | 35% | No | $1,199 | **3.8** |
-| [Husqvarna Automower 435 iQ AWD](https://bestrobotmower.co/mowers/husqvarna-automower-435-iq-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Husqvarna | RTK GNSS | 5,261 m² | 70% | Yes | $4,999 | **3.7** |
-| [Segway Navimow i105E](https://bestrobotmower.co/mowers/segway-navimow-i105e?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK GNSS | 506 m² | 30% | No | $799 | **3.4** |
-| [Husqvarna Automower 410 iQ](https://bestrobotmower.co/mowers/husqvarna-automower-410-iq?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Husqvarna | RTK GNSS | 2,023 m² | 45% | No | $2,999 | **3** |
+| [Dreame Roboticmower A1](https://bestrobotmower.co/mowers/dreame-roboticmower-a1?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 2,000 m² | 45% | No | $2,099 | **3.7** |
+| [Mammotion Luba 2 AWD 1000](https://bestrobotmower.co/mowers/mammotion-luba-2-awd-1000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK GNSS | 1,000 m² | 80% | Yes | $1,699 | **3.7** |
+| [Mammotion Yuka Mini](https://bestrobotmower.co/mowers/mammotion-yuka-mini?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK + Vision | 809 m² | 50% | No | $1,099 | **3.7** |
+| [Segway Navimow H2](https://bestrobotmower.co/mowers/segway-navimow-h2?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | LiDAR + RTK + Vision | 1,012 m² | 45% | No | $1,799 | **3.7** |
+| [Sunseeker V3](https://bestrobotmower.co/mowers/sunseeker-v3?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Sunseeker | Vision | 600 m² | 42% | No | $599.99 | **3.6** |
+| [Husqvarna Automower 435 iQ AWD](https://bestrobotmower.co/mowers/husqvarna-automower-435-iq-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Husqvarna | RTK GNSS | 5,261 m² | 70% | Yes | $4,999 | **3.5** |
+| [Segway Navimow i105E](https://bestrobotmower.co/mowers/segway-navimow-i105e?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK GNSS | 506 m² | 30% | No | $799 | **3.5** |
+| [Segway Navimow i2 AWD](https://bestrobotmower.co/mowers/segway-navimow-i2-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 607 m² | 45% | Yes | $999 | **3.5** |
+| [Worx Landroid Vision WR220](https://bestrobotmower.co/mowers/worx-landroid-vision-wr220?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Worx | Vision | 2,023 m² | 30% | No | $2,499.99 | **3.5** |
+| [Husqvarna Automower 410 iQ](https://bestrobotmower.co/mowers/husqvarna-automower-410-iq?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Husqvarna | RTK GNSS | 2,023 m² | 45% | No | $2,599.99 | **3.1** |
 
-## Announced models (not yet scored)
-
-| Model | Brand | Navigation | Max coverage | Max slope | AWD | Est. price |
-|---|---|---|---|---|---|---|
-| [Ecovacs Goat A3000 LiDAR](https://bestrobotmower.co/mowers/ecovacs-goat-a3000-lidar?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | RTK + Vision | 3,035 m² | 50% | No | $1,910 |
-| [Segway Navimow X390](https://bestrobotmower.co/mowers/segway-navimow-x390?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 10,118 m² | 50% | No | $4,499 |
+Prices as of 2026-09-29; each row's own date is in `price_as_of`.
 
 ## Using & citing
 
 Free to use, adapt, and redistribute under CC BY 4.0 with attribution. Suggested citation:
 
-> Robot Lawn Mower Specs & Scores dataset, BestRobotMower.co, https://bestrobotmower.co, 2026-09-02. Licensed CC BY 4.0.
+> Robot Lawn Mower Specs & Scores dataset, BestRobotMower.co, https://bestrobotmower.co, 2026-09-29. Licensed CC BY 4.0.
 
 If you build something with this (a comparison tool, a Home Assistant integration, a chart), open an issue or PR
 and it can be linked here.
 
 ## Updating
 
-Specs and prices drift. This snapshot was compiled **2026-09-02** (prices verified **2026-08-24**).
+Specs and prices drift. This snapshot was compiled **2026-09-29** (prices as of **2026-09-29**).
 The live, continuously-updated version of every figure here is on the model pages at
 [BestRobotMower.co](https://bestrobotmower.co/mowers?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
