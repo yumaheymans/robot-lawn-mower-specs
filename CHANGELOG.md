@@ -2,6 +2,28 @@
 
 Each release is a dated, citable snapshot. Robot-mower prices move often; the live, always-current version is at [bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
+## v2026.10.01 (2026-10-01)
+
+**39 to 55 models, 9 to 14 brands.** Prices as of 2026-10-01; 30 of the 55 headline prices are the brand store's live price read from its own product feed.
+
+### Added (16)
+
+Airseekers: Tron, Tron Plus, Tron SE; Anthbot: Genie 600e, Genie 1000, Genie 3000, M5, M5 LiDAR, M9, N8; eufy: E15; Lymow: One Plus; Roborock: RockMow X115H, RockMow X120H LiDAR, RockMow X130H, RockNeo Q110H.
+
+Where a maker's own figures disagree, the dataset takes the conservative one and the model's page says so:
+
+- **Anthbot Genie 600e, 1000 and 3000:** coverage from Anthbot's spec table and manual (600, 1,000 and 3,000 m²), not the larger figures on its product page.
+- **Airseekers Tron family:** slope is the 60% working (mowing) grade from Airseekers' spec table, not the 65% climbing headline.
+- **Lymow One Plus:** Lymow rates coverage per day (1.73 acres with the 10A charger, a lab maximum), not as a maximum lawn size.
+- **Roborock RockMow X115H and X130H:** `battery_runtime_min` is empty because Roborock's spec page and its US manual give different runtimes.
+- **Roborock:** sold in the US through Amazon only, so its prices are Amazon's regular prices; the RockMow X120H LiDAR is out of stock there (`in_stock` false).
+
+### Corrected
+
+- **MOVA LiDAX Pro 800:** score 4.1 to 3.3. Gizmodo's hands-on review saw its obstacle avoidance fail, so the score no longer credits its camera avoidance ([methodology](methodology.md)).
+- **Scores** were recomputed against the larger field (the coverage and coverage-per-dollar axes are scored against the whole field): 26 more of the 39 earlier models moved, by 0.1 to 0.2. The rubric is unchanged.
+- Price moves read from the stores: Sunseeker S4 $999.99 to $1,299.99, Sunseeker X3 Plus $899.99 to $999 (Amazon), MOVA LiDAX Ultra 1000 $999 to $949.
+
 ## v2026.09.29 (2026-09-29)
 
 **23 to 39 models, still 9 brands.** Prices as of 2026-09-29; 22 of the 39 headline prices are the brand store's live price read from its own product feed.
