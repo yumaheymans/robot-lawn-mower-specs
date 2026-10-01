@@ -2,6 +2,31 @@
 
 Each release is a dated, citable snapshot. Robot-mower prices move often; the live, always-current version is at [bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
+## v2026.10.02 (2026-10-02)
+
+**55 to 70 models, 14 to 15 brands.** Prices as of 2026-10-02; 30 of the 70 headline prices are the brand store's live price read from its own product feed.
+
+### Added (15)
+
+Ecovacs: Goat A2500 RTK, Goat O1000 RTK; Husqvarna: Automower 420 iQ, Automower 440 iQ; Sunseeker: X7 Gen 2, X7 Plus Gen 2; Worx: Landroid Vision Cloud WR310, WR320, WR320.1, WR340, Landroid Vision Cloud 4WD WR341, WR342, WR344, WR346; Yarbo: Y40 Lawn Mower Pro (new brand).
+
+Worx is listed by part number because the parts differ: the `.1` parts add the Cut-to-Zero edge module. Worx's own US store sells the WR310.1, WR320.1, WR340 and the four 4WD parts; Amazon sells the original WR310 and WR320, which lack the module.
+
+Where a maker's own figures disagree, the dataset takes the conservative one and the model's page says so:
+
+- **Worx Landroid Vision Cloud 4WD:** slope 83%. Worx's spec table says 84% (40°) and its product copy 83%. Worx's manuals also advise against slopes over 15° with the Cut-to-Zero module fitted, which it is as standard on the 4WD parts, the `.1` parts and the WR340.
+- **Worx runtimes** come from Worx's own comparison chart on its Amazon listings (its US product pages and manuals publish none). The chart does not cover the WR310.1 or WR320.1, so their `battery_runtime_min` is empty.
+
+### Corrected
+
+- **Worx Landroid Vision Cloud:** this row is part WR310.1, the quarter-acre part Worx's US store sells: coverage 1,012 to 1,000 m², slope 35% to 30%, runtime removed, release year 2024 to 2026. Its earlier figures mixed in other parts' claims (4G, a 60-minute runtime).
+- **Husqvarna Automower 435 iQ AWD:** coverage 5,261 to 3,642 m² (Husqvarna rates it at 0.9 acre). Its price now comes from Husqvarna's store ($4,999.99), since Amazon does not sell it new.
+- **Worx Landroid Vision WR220:** out of stock at Worx; the headline price is a third-party seller on Amazon ($1,572.72).
+- **Ecovacs Goat A2000 LiDAR PRO:** $1,452 to $1,399 (Ecovacs store sale; list $1,999.99).
+- **Ecovacs Goat A3000 LiDAR, A3000 LiDAR PRO and O1000 LiDAR PRO:** Amazon prices added; Amazon is now the cheapest for each.
+- **EcoFlow Blade:** EcoFlow's US store no longer sells it. The row keeps the last list price EcoFlow published (on its Australian store), out of stock.
+- **Scores** were recomputed against the larger field (the coverage and coverage-per-dollar axes are scored against the whole field): 34 earlier models moved by 0.1 to 0.2. The rubric is unchanged.
+
 ## v2026.10.01 (2026-10-01)
 
 **39 to 55 models, 9 to 14 brands.** Prices as of 2026-10-01; 30 of the 55 headline prices are the brand store's live price read from its own product feed.
