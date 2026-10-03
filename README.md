@@ -2,8 +2,8 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](LICENSE)
 
-An open, machine-readable dataset of **39 wire-free robot lawn mowers** across **9 brands**
-(Dreame, EcoFlow, Ecovacs, Husqvarna, Mammotion, MOVA, Segway, Sunseeker, Worx), with cited specs, dated prices, and a transparent **0-5 BestRobotMower Score**
+An open, machine-readable dataset of **76 wire-free robot lawn mowers** across **15 brands**
+(Airseekers, Anthbot, Dreame, EcoFlow, Ecovacs, eufy, Husqvarna, Lymow, Mammotion, MOVA, Roborock, Segway, Sunseeker, Worx, Yarbo), with cited specs, dated prices, and a transparent **0-5 BestRobotMower Score**
 for every shipping model.
 
 Compiled and computed by **[BestRobotMower.co](https://bestrobotmower.co/?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset)**, an independent robot-mower comparison site.
@@ -14,7 +14,7 @@ with attribution.
 ## 🔎 Explore it in your browser
 
 **[Interactive spec explorer → yumaheymans.github.io/robot-lawn-mower-specs](https://yumaheymans.github.io/robot-lawn-mower-specs/)**
-is the human-readable companion to the CSV/JSON below: a searchable, sortable table of all 70 models with the
+is the human-readable companion to the CSV/JSON below: a searchable, sortable table of all 76 models with the
 0-5 score, specs, dated prices, and a link to each model's cited write-up.
 
 **On the site:** the canonical, always-current version lives at
@@ -23,6 +23,9 @@ with a live machine-readable feed at
 [`/api/dataset/mowers.json`](https://bestrobotmower.co/api/dataset/mowers.json) and
 [`/api/dataset/mowers.csv`](https://bestrobotmower.co/api/dataset/mowers.csv) (CORS-open, refreshed with the site).
 The files in this repo are a versioned snapshot for offline and reproducible use.
+
+Summary statistics computed from the same rows (median price, rated coverage and slope, navigation and brand
+breakdowns) are on the site at **[Robot mower statistics 2026](https://bestrobotmower.co/blog/robot-mower-statistics-2026?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset)**.
 
 > **Why this exists:** there was no open, structured spec table for robot mowers anywhere. Robotics hobbyists,
 > Home Assistant tinkerers, journalists, and buyers kept re-scraping the same manufacturer PDFs. This is that
@@ -48,13 +51,13 @@ influenced by affiliate relationships.
 
 | File | Format | Rows |
 |---|---|---|
-| [`data/mowers.csv`](data/mowers.csv) | CSV (spreadsheet-friendly) | 70 |
-| [`data/mowers.json`](data/mowers.json) | JSON (with dataset metadata) | 70 |
+| [`data/mowers.csv`](data/mowers.csv) | CSV (spreadsheet-friendly) | 76 |
+| [`data/mowers.json`](data/mowers.json) | JSON (with dataset metadata) | 76 |
 | [`CHANGELOG.md`](CHANGELOG.md) | What changed in each release | n/a |
 | [`methodology.md`](methodology.md) | The full 0-5 scoring rubric | n/a |
 
-- **70 shipping** models (on sale now, scored)
-- Prices as of **2026-10-02**: 30 of the 70 headline prices are the brand store's live price read from its own
+- **76 shipping** models (on sale now, scored)
+- Prices as of **2026-10-03**: 31 of the 76 headline prices are the brand store's live price read from its own
   product feed; the rest were checked by hand on the date in `price_as_of`.
 
 ## Schema
@@ -119,16 +122,21 @@ exact formulas: [`methodology.md`](methodology.md) and [https://bestrobotmower.c
 | Model | Brand | Navigation | Max coverage | Max slope | AWD | Price | Score |
 |---|---|---|---|---|---|---|---|
 | [Yarbo Y40 Lawn Mower Pro](https://bestrobotmower.co/mowers/yarbo-y40-lawn-mower-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Yarbo | RTK + Vision | 24,281 m² | 70% | No | $5,499 | **4.6** |
+| [Dreame Roboticmower A3 AWD Pro 5000](https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-5000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 5,000 m² | 80% | Yes | $2,799.99 | **4.5** |
 | [Dreame Roboticmower A3 AWD Pro](https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 2,500 m² | 80% | Yes | $1,699.99 | **4.4** |
+| [Dreame Roboticmower A3 AWD Pro 3500](https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-3500?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 3,500 m² | 80% | Yes | $1,999.99 | **4.4** |
 | [Lymow One Plus](https://bestrobotmower.co/mowers/lymow-one-plus?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Lymow | RTK + Vision | 7,001 m² | 100% | No | $3,199 | **4.4** |
 | [Mammotion Luba 3 AWD](https://bestrobotmower.co/mowers/mammotion-luba-3-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | LiDAR + RTK + Vision | 3,000 m² | 80% | Yes | $2,109 | **4.4** |
+| [Mammotion Luba 3 AWD 5000](https://bestrobotmower.co/mowers/mammotion-luba-3-awd-5000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | LiDAR + RTK + Vision | 5,000 m² | 80% | Yes | $3,299 | **4.4** |
 | [MOVA LiDAX Ultra 3000 AWD](https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 3,035 m² | 80% | Yes | $2,199 | **4.4** |
+| [Dreame A3 AWD 2000](https://bestrobotmower.co/mowers/dreame-a3-awd-2000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 2,000 m² | 80% | Yes | $1,699.99 | **4.3** |
 | [Ecovacs Goat A3000 LiDAR](https://bestrobotmower.co/mowers/ecovacs-goat-a3000-lidar?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 3,035 m² | 50% | No | $1,910.76 | **4.3** |
 | [Ecovacs Goat A3000 LiDAR PRO](https://bestrobotmower.co/mowers/ecovacs-goat-a3000-lidar-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 3,035 m² | 50% | No | $2,124.99 | **4.3** |
 | [Mammotion Luba 2 AWD 5000](https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Mammotion | RTK GNSS | 5,000 m² | 80% | Yes | $2,299 | **4.3** |
 | [MOVA LiDAX Ultra 2000](https://bestrobotmower.co/mowers/mova-lidax-ultra-2000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 2,000 m² | 45% | No | $1,099 | **4.3** |
 | [MOVA LiDAX Ultra 2000 AWD](https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 2,000 m² | 80% | Yes | $1,799 | **4.3** |
 | [Segway Navimow X390](https://bestrobotmower.co/mowers/segway-navimow-x390?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 10,118 m² | 50% | No | $4,499 | **4.3** |
+| [Segway Navimow X450](https://bestrobotmower.co/mowers/segway-navimow-x450?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 6,070 m² | 84% | Yes | $2,999 | **4.3** |
 | [Ecovacs Goat A2000 LiDAR PRO](https://bestrobotmower.co/mowers/ecovacs-goat-a2000-lidar-pro?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Ecovacs | LiDAR + Vision | 2,023 m² | 50% | No | $1,399 | **4.2** |
 | [Roborock RockMow X130H](https://bestrobotmower.co/mowers/roborock-rockmow-x130h?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Roborock | RTK + Vision | 4,000 m² | 80% | Yes | $2,499.98 | **4.2** |
 | [Segway Navimow X350](https://bestrobotmower.co/mowers/segway-navimow-x350?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | RTK + Vision | 6,070 m² | 50% | No | $2,799 | **4.2** |
@@ -147,6 +155,7 @@ exact formulas: [`methodology.md`](methodology.md) and [https://bestrobotmower.c
 | [Dreame A3 AWD](https://bestrobotmower.co/mowers/dreame-a3-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Dreame | LiDAR + Vision | 1,000 m² | 80% | Yes | $1,399.99 | **4.0** |
 | [MOVA LiDAX Ultra 1000](https://bestrobotmower.co/mowers/mova-lidax-ultra-1000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | MOVA | LiDAR + Vision | 1,000 m² | 45% | No | $949 | **4.0** |
 | [Roborock RockMow X115H](https://bestrobotmower.co/mowers/roborock-rockmow-x115h?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Roborock | RTK + Vision | 1,500 m² | 80% | Yes | $1,499.98 | **4.0** |
+| [Segway Navimow H220](https://bestrobotmower.co/mowers/segway-navimow-h220?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | LiDAR + RTK + Vision | 2,023 m² | 45% | No | $2,199 | **4.0** |
 | [Segway Navimow i2 LiDAR](https://bestrobotmower.co/mowers/segway-navimow-i2-lidar?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Segway | LiDAR + Vision | 1,497 m² | 45% | No | $1,599 | **4.0** |
 | [Sunseeker X5](https://bestrobotmower.co/mowers/sunseeker-x5?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Sunseeker | RTK + Vision | 2,000 m² | 60% | Yes | $1,499 | **4.0** |
 | [Sunseeker X7 Gen 2](https://bestrobotmower.co/mowers/sunseeker-x7-gen-2?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Sunseeker | RTK + Vision | 3,035 m² | 70% | Yes | $2,599 | **4.0** |
@@ -189,13 +198,13 @@ exact formulas: [`methodology.md`](methodology.md) and [https://bestrobotmower.c
 | [Husqvarna Automower 435 iQ AWD](https://bestrobotmower.co/mowers/husqvarna-automower-435-iq-awd?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Husqvarna | RTK GNSS | 3,642 m² | 70% | Yes | $4,999.99 | **3.1** |
 | [Husqvarna Automower 410 iQ](https://bestrobotmower.co/mowers/husqvarna-automower-410-iq?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) | Husqvarna | RTK GNSS | 2,023 m² | 45% | No | $2,599.99 | **3.0** |
 
-Prices as of 2026-10-02; each row's own date is in `price_as_of`.
+Prices as of 2026-10-03; each row's own date is in `price_as_of`.
 
 ## Using & citing
 
 Free to use, adapt, and redistribute under CC BY 4.0 with attribution. Suggested citation:
 
-> Robot Lawn Mower Specs & Scores dataset, BestRobotMower.co, https://bestrobotmower.co, 2026-10-02. Licensed CC BY 4.0.
+> Robot Lawn Mower Specs & Scores dataset, BestRobotMower.co, https://bestrobotmower.co, 2026-10-03. Licensed CC BY 4.0.
 
 If you build something with this (a comparison tool, a Home Assistant integration, a chart), open an issue or PR
 and it can be linked here.

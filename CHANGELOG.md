@@ -2,6 +2,24 @@
 
 Each release is a dated, citable snapshot. Robot-mower prices move often; the live, always-current version is at [bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
+## v2026.10.03 (2026-10-03)
+
+**70 to 76 models.** Prices as of 2026-10-03; 31 of the 76 headline prices are the brand store's live price read from its own product feed.
+
+### Added (6)
+
+Dreame: Roboticmower A3 AWD Pro 3500, Roboticmower A3 AWD Pro 5000, A3 AWD 2000; Mammotion: Luba 3 AWD 5000; Segway: Navimow X450, Navimow H220.
+
+Each is another size tier of a model already in the dataset. Tiers are separate rows because they differ in rated area, battery and price, which are the figures a buyer compares; the earlier rows kept one tier per store listing, so the larger tiers (the answers for a 1-acre lawn) were missing.
+
+- **Dreame:** Dreame publishes no mowing time per charge for any A3 tier, so `battery_runtime_min` is empty for them. Dreame's store labels the Pro 5000 as 1.20 acres; its US manual and the 5,000 m² rating give 1.24.
+- **Segway Navimow X450:** 6,070 m² (1.5 acres) is Segway's US rating; its EU and Australian X450 is rated 5,000 m². Sold out at Segway's own store on 2026-10-03.
+
+### Corrected
+
+- **Dreame A3 AWD (1000):** noise 62.8 to 70.8 dB, the sound power level (LWA) every other row uses. Dreame's page advertises 62.8 dB, which is the sound pressure level (LpA).
+- **The README introduction** said 39 models across 9 brands since v2026.09.29 while the data said otherwise: the script that rewrites it had stopped matching its own text. It now states the current counts and fails loudly if a rewrite misses.
+
 ## v2026.10.02 (2026-10-02)
 
 **55 to 70 models, 14 to 15 brands.** Prices as of 2026-10-02; 30 of the 70 headline prices are the brand store's live price read from its own product feed.
