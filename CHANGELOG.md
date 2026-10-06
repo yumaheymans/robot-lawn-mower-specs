@@ -2,6 +2,17 @@
 
 Each release is a dated, citable snapshot. Robot-mower prices move often; the live, always-current version is at [bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
+## v2026.10.05 (2026-10-05)
+
+**Amazon prices are no longer quoted.** Prices as of 2026-10-05; 44 of the 76 headline prices are the brand store's live price read from its own product feed.
+
+### Changed
+
+- **No Amazon prices.** Amazon shows its own current price and stock on each listing, so the dataset no longer quotes them. `price_usd` is now the cheapest price we quote from a brand store or retailer that is not sold out. Releases up to v2026.10.03 quoted hand-checked Amazon prices: use this release instead.
+- **10 models have an empty `price_usd`**, because Amazon is the only seller we track that is not sold out of them: Mammotion Yuka 1500, Ecovacs Goat A3000 LiDAR, Worx Landroid Vision WR220, Roborock RockNeo Q110H, Roborock RockMow X115H, Roborock RockMow X130H, Roborock RockMow X120H LiDAR, Ecovacs Goat A2500 RTK, Worx Landroid Vision Cloud WR310, Worx Landroid Vision Cloud WR320. Each row's `model_page_url` leads to the model's page, which links the Amazon listing.
+- **Where Amazon had been the cheapest seller**, `price_usd`, `price_provider` and the price-derived score axis now come from the next seller (usually the brand's own store), so some headline prices are higher than in v2026.10.03 and some 0-5 scores moved by 0.1 to 0.3. The six picks on the site are unchanged.
+- **Store prices are read daily** (they were read every three days), so `price_as_of` on a live price is at most a day old.
+
 ## v2026.10.03 (2026-10-03)
 
 **70 to 76 models.** Prices as of 2026-10-03; 31 of the 76 headline prices are the brand store's live price read from its own product feed.
