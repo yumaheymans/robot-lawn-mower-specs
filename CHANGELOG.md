@@ -2,6 +2,20 @@
 
 Each release is a dated, citable snapshot. Robot-mower prices move often; the live, always-current version is at [bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
+## v2026.10.07 (2026-10-07)
+
+**Added: the daily store price record.** Prices as of 2026-10-07; 44 of the 76 headline prices are the brand store's live price read from its own product feed.
+
+### Added
+
+- **`data/price-history.csv` and `data/price-history.json`**: every read of a store price from 2026-10-01 to 2026-10-07, 305 reads of 53 prices for 45 models at 10 brand stores and retailers, with the seller's own list ("compare at") price when it showed one above the price, and stock. It is the record the site reads to decide whether a lower price is a real drop: a price below the lowest price the same seller charged in the 30 days before the change. Columns and method: [Daily price record](README.md#daily-price-record). The live record grows daily at [bestrobotmower.co/deals](https://bestrobotmower.co/deals?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
+
+### Changed
+
+- **15 headline prices moved** from v2026.10.05, across Amazon's Prime Big Deal Days (Oct 6 to 7), when several brand stores lowered their prices: 14 are lower (among them the Dreame A3 AWD at $1,099.99 from $1,399.99, the Segway Navimow i2 AWD at $849 from $999 and the Yarbo Y40 Lawn Mower Pro at $4,899 from $5,499) and 1 is higher (the Segway Navimow i105E at $799 from $669). Which of the lower prices are real drops by the 30-day rule, and which only undo a recent rise, is on the [deals page](https://bestrobotmower.co/deals?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
+- **The Navimow X330, X350 and X390 are now cheapest at Abt** ($1,998, $2,448 and $3,948, below Segway's own store since Oct 7); the Navimow X4 is back at Segway's store at the same $2,499.
+- **10 scores moved by 0.1**, through the coverage-per-dollar axis, which follows the headline price and is scaled against the whole field.
+
 ## v2026.10.05 (2026-10-05)
 
 **Amazon prices are no longer quoted.** Prices as of 2026-10-05; 44 of the 76 headline prices are the brand store's live price read from its own product feed.

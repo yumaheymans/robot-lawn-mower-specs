@@ -6,7 +6,8 @@ abstract: >-
   navigation type, maximum lawn area, slope capability, cutting specs, dated prices
   (the brand store's live price and stock wherever the store publishes a feed), and a
   transparent 0-5 BestRobotMower Score (a documented weighted function of the cited specs)
-  for every shipping model.
+  for every shipping model, plus a daily record of every store price read since
+  2026-10-01 (305 reads).
 type: dataset
 authors:
   - name: "BestRobotMower.co"
@@ -22,5 +23,5 @@ keywords:
   - wire-free robot mower
   - RTK robot mower
   - dataset
-version: "2026.10.05"
-date-released: "2026-10-05"
+version: "2026.10.07"
+date-released: "2026-10-07"

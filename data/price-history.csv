@@ -1,0 +1,306 @@
+read_at,model,model_key,model_page_url,seller,seller_key,price_usd,list_price_usd,in_stock
+2026-10-01T06:00:03.580Z,Segway Navimow i105E,navimow-i105e,https://bestrobotmower.co/mowers/segway-navimow-i105e,Segway Navimow Store,segway-store,799,,true
+2026-10-01T06:00:03.605Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Segway Navimow Store,segway-store,1099,,false
+2026-10-01T06:00:03.622Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Segway Navimow Store,segway-store,2299,,true
+2026-10-01T06:00:03.641Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Segway Navimow Store,segway-store,4499,,true
+2026-10-01T06:00:03.658Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Segway Navimow Store,segway-store,2799,,true
+2026-10-01T06:00:03.677Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Segway Navimow Store,segway-store,999,,true
+2026-10-01T06:00:03.694Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Segway Navimow Store,segway-store,1599,,true
+2026-10-01T06:00:03.714Z,Segway Navimow H2,navimow-h2,https://bestrobotmower.co/mowers/segway-navimow-h2,Segway Navimow Store,segway-store,1799,,true
+2026-10-01T06:00:03.732Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Segway Navimow Store,segway-store,2499,,false
+2026-10-01T06:00:03.751Z,Mammotion Luba 2 AWD 5000,luba-2-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000,Mammotion Store,mammotion-store,2999,,false
+2026-10-01T06:00:03.768Z,Mammotion Yuka Mini,yuka-mini,https://bestrobotmower.co/mowers/mammotion-yuka-mini,Mammotion Store,mammotion-store,1299,,false
+2026-10-01T06:00:03.787Z,Mammotion Luba 3 AWD,luba-3-awd,https://bestrobotmower.co/mowers/mammotion-luba-3-awd,Mammotion Store,mammotion-store,2109,2799,true
+2026-10-01T06:00:03.804Z,Mammotion Luba Mini 2 AWD,luba-mini-2-awd,https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd,Mammotion Store,mammotion-store,1699,1999,true
+2026-10-01T06:00:03.824Z,Mammotion Yuka Mini 2,yuka-mini-2,https://bestrobotmower.co/mowers/mammotion-yuka-mini-2,Mammotion Store,mammotion-store,1399,1559,false
+2026-10-01T06:00:03.841Z,Dreame Roboticmower A3 AWD Pro,dreame-a3-awd-pro,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro,Dreame Yard Care Store,dreame-store,1699.99,3099.99,true
+2026-10-01T06:00:03.860Z,Dreame A3 AWD,dreame-a3-awd,https://bestrobotmower.co/mowers/dreame-a3-awd,Dreame Yard Care Store,dreame-store,1399.99,1999.99,true
+2026-10-01T06:00:03.877Z,Sunseeker X3 Plus,sunseeker-x3-plus,https://bestrobotmower.co/mowers/sunseeker-x3-plus,Sunseeker Store,sunseeker-store,899.99,1599.99,true
+2026-10-01T06:00:03.896Z,Sunseeker X5,sunseeker-x5,https://bestrobotmower.co/mowers/sunseeker-x5,Sunseeker Store,sunseeker-store,1499,1999.99,true
+2026-10-01T06:00:03.913Z,Sunseeker S4,sunseeker-s4,https://bestrobotmower.co/mowers/sunseeker-s4,Sunseeker Store,sunseeker-store,999.99,1799.99,true
+2026-10-01T06:00:03.934Z,Sunseeker V3,sunseeker-v3,https://bestrobotmower.co/mowers/sunseeker-v3,Sunseeker Store,sunseeker-store,599.99,999.99,true
+2026-10-01T06:00:03.952Z,MOVA LiDAX Ultra 3000 AWD,mova-lidax-ultra-3000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd,MOVA Store,mova-store,2199,2999,true
+2026-10-01T06:00:03.970Z,MOVA LiDAX Ultra 1000,mova-lidax-ultra-1000,https://bestrobotmower.co/mowers/mova-lidax-ultra-1000,MOVA Store,mova-store,949,1299,true
+2026-10-01T06:00:03.988Z,MOVA LiDAX Ultra 2000 AWD,mova-lidax-ultra-2000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd,MOVA Store,mova-store,1799,2299,true
+2026-10-01T06:00:04.007Z,MOVA LiDAX Ultra 2000,mova-lidax-ultra-2000,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000,MOVA Store,mova-store,1099,1799,true
+2026-10-01T06:00:04.023Z,MOVA LiDAX Pro 800,mova-lidax-pro-800,https://bestrobotmower.co/mowers/mova-lidax-pro-800,MOVA Store,mova-store,849,1099,true
+2026-10-01T18:36:17.463Z,Segway Navimow i105E,navimow-i105e,https://bestrobotmower.co/mowers/segway-navimow-i105e,Segway Navimow Store,segway-store,799,,true
+2026-10-01T18:36:17.483Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Segway Navimow Store,segway-store,1099,,false
+2026-10-01T18:36:17.500Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Segway Navimow Store,segway-store,2299,,true
+2026-10-01T18:36:17.518Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Segway Navimow Store,segway-store,4499,,true
+2026-10-01T18:36:17.535Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Segway Navimow Store,segway-store,2799,,true
+2026-10-01T18:36:17.552Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Segway Navimow Store,segway-store,999,,true
+2026-10-01T18:36:17.569Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Segway Navimow Store,segway-store,1599,,true
+2026-10-01T18:36:17.586Z,Segway Navimow H2,navimow-h2,https://bestrobotmower.co/mowers/segway-navimow-h2,Segway Navimow Store,segway-store,1799,,true
+2026-10-01T18:36:17.603Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Segway Navimow Store,segway-store,2499,,false
+2026-10-01T18:36:17.621Z,Mammotion Luba 2 AWD 5000,luba-2-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000,Mammotion Store,mammotion-store,2999,,false
+2026-10-01T18:36:17.638Z,Mammotion Yuka Mini,yuka-mini,https://bestrobotmower.co/mowers/mammotion-yuka-mini,Mammotion Store,mammotion-store,1299,,false
+2026-10-01T18:36:17.654Z,Mammotion Luba 3 AWD,luba-3-awd,https://bestrobotmower.co/mowers/mammotion-luba-3-awd,Mammotion Store,mammotion-store,2109,2799,true
+2026-10-01T18:36:17.671Z,Mammotion Luba Mini 2 AWD,luba-mini-2-awd,https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd,Mammotion Store,mammotion-store,1699,1999,true
+2026-10-01T18:36:17.689Z,Mammotion Yuka Mini 2,yuka-mini-2,https://bestrobotmower.co/mowers/mammotion-yuka-mini-2,Mammotion Store,mammotion-store,1399,1559,false
+2026-10-01T18:36:17.705Z,Dreame Roboticmower A3 AWD Pro,dreame-a3-awd-pro,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro,Dreame Yard Care Store,dreame-store,1699.99,3099.99,true
+2026-10-01T18:36:17.722Z,Dreame A3 AWD,dreame-a3-awd,https://bestrobotmower.co/mowers/dreame-a3-awd,Dreame Yard Care Store,dreame-store,1399.99,1999.99,true
+2026-10-01T18:36:17.738Z,Sunseeker X3 Plus,sunseeker-x3-plus,https://bestrobotmower.co/mowers/sunseeker-x3-plus,Sunseeker Store,sunseeker-store,999.99,1599.99,true
+2026-10-01T18:36:17.754Z,Sunseeker X5,sunseeker-x5,https://bestrobotmower.co/mowers/sunseeker-x5,Sunseeker Store,sunseeker-store,1499,1999.99,true
+2026-10-01T18:36:17.772Z,Sunseeker S4,sunseeker-s4,https://bestrobotmower.co/mowers/sunseeker-s4,Sunseeker Store,sunseeker-store,1299.99,1799.99,true
+2026-10-01T18:36:17.788Z,Sunseeker V3,sunseeker-v3,https://bestrobotmower.co/mowers/sunseeker-v3,Sunseeker Store,sunseeker-store,599.99,999.99,true
+2026-10-01T18:36:17.806Z,MOVA LiDAX Ultra 3000 AWD,mova-lidax-ultra-3000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd,MOVA Store,mova-store,2199,2999,true
+2026-10-01T18:36:17.822Z,MOVA LiDAX Ultra 1000,mova-lidax-ultra-1000,https://bestrobotmower.co/mowers/mova-lidax-ultra-1000,MOVA Store,mova-store,949,1299,true
+2026-10-01T18:36:17.840Z,MOVA LiDAX Ultra 2000 AWD,mova-lidax-ultra-2000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd,MOVA Store,mova-store,1799,2299,true
+2026-10-01T18:36:17.856Z,MOVA LiDAX Ultra 2000,mova-lidax-ultra-2000,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000,MOVA Store,mova-store,1099,1799,true
+2026-10-01T18:36:17.873Z,MOVA LiDAX Pro 800,mova-lidax-pro-800,https://bestrobotmower.co/mowers/mova-lidax-pro-800,MOVA Store,mova-store,849,1099,true
+2026-10-01T19:22:09.788Z,Segway Navimow i105E,navimow-i105e,https://bestrobotmower.co/mowers/segway-navimow-i105e,Segway Navimow Store,segway-store,799,,true
+2026-10-01T19:22:09.858Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Segway Navimow Store,segway-store,1099,,false
+2026-10-01T19:22:09.874Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Segway Navimow Store,segway-store,2299,,true
+2026-10-01T19:22:09.893Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Segway Navimow Store,segway-store,4499,,true
+2026-10-01T19:22:09.912Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Segway Navimow Store,segway-store,2799,,true
+2026-10-01T19:22:09.929Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Segway Navimow Store,segway-store,999,,true
+2026-10-01T19:22:09.945Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Segway Navimow Store,segway-store,1599,,true
+2026-10-01T19:22:09.963Z,Segway Navimow H2,navimow-h2,https://bestrobotmower.co/mowers/segway-navimow-h2,Segway Navimow Store,segway-store,1799,,true
+2026-10-01T19:22:09.981Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Segway Navimow Store,segway-store,2499,,false
+2026-10-01T19:22:09.998Z,Mammotion Luba 2 AWD 5000,luba-2-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000,Mammotion Store,mammotion-store,2999,,false
+2026-10-01T19:22:10.015Z,Mammotion Yuka Mini,yuka-mini,https://bestrobotmower.co/mowers/mammotion-yuka-mini,Mammotion Store,mammotion-store,1299,,false
+2026-10-01T19:22:10.032Z,Mammotion Luba 3 AWD,luba-3-awd,https://bestrobotmower.co/mowers/mammotion-luba-3-awd,Mammotion Store,mammotion-store,2109,2799,true
+2026-10-01T19:22:10.052Z,Mammotion Luba Mini 2 AWD,luba-mini-2-awd,https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd,Mammotion Store,mammotion-store,1699,1999,true
+2026-10-01T19:22:10.069Z,Mammotion Yuka Mini 2,yuka-mini-2,https://bestrobotmower.co/mowers/mammotion-yuka-mini-2,Mammotion Store,mammotion-store,1399,1559,false
+2026-10-01T19:22:10.086Z,Dreame Roboticmower A3 AWD Pro,dreame-a3-awd-pro,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro,Dreame Yard Care Store,dreame-store,1699.99,3099.99,true
+2026-10-01T19:22:10.103Z,Dreame A3 AWD,dreame-a3-awd,https://bestrobotmower.co/mowers/dreame-a3-awd,Dreame Yard Care Store,dreame-store,1399.99,1999.99,true
+2026-10-01T19:22:10.120Z,Sunseeker X3 Plus,sunseeker-x3-plus,https://bestrobotmower.co/mowers/sunseeker-x3-plus,Sunseeker Store,sunseeker-store,999.99,1599.99,true
+2026-10-01T19:22:10.136Z,Sunseeker X5,sunseeker-x5,https://bestrobotmower.co/mowers/sunseeker-x5,Sunseeker Store,sunseeker-store,1499,1999.99,true
+2026-10-01T19:22:10.153Z,Sunseeker S4,sunseeker-s4,https://bestrobotmower.co/mowers/sunseeker-s4,Sunseeker Store,sunseeker-store,1299.99,1799.99,true
+2026-10-01T19:22:10.169Z,Sunseeker V3,sunseeker-v3,https://bestrobotmower.co/mowers/sunseeker-v3,Sunseeker Store,sunseeker-store,599.99,999.99,true
+2026-10-01T19:22:10.187Z,MOVA LiDAX Ultra 3000 AWD,mova-lidax-ultra-3000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd,MOVA Store,mova-store,2199,2999,true
+2026-10-01T19:22:10.203Z,MOVA LiDAX Ultra 1000,mova-lidax-ultra-1000,https://bestrobotmower.co/mowers/mova-lidax-ultra-1000,MOVA Store,mova-store,949,1299,true
+2026-10-01T19:22:10.220Z,MOVA LiDAX Ultra 2000 AWD,mova-lidax-ultra-2000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd,MOVA Store,mova-store,1799,2299,true
+2026-10-01T19:22:10.239Z,MOVA LiDAX Ultra 2000,mova-lidax-ultra-2000,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000,MOVA Store,mova-store,1099,1799,true
+2026-10-01T19:22:10.256Z,MOVA LiDAX Pro 800,mova-lidax-pro-800,https://bestrobotmower.co/mowers/mova-lidax-pro-800,MOVA Store,mova-store,849,1099,true
+2026-10-01T19:22:10.274Z,Lymow One Plus,lymow-one-plus,https://bestrobotmower.co/mowers/lymow-one-plus,Lymow Store,lymow-store,3199,,true
+2026-10-01T19:22:10.294Z,Airseekers Tron SE,airseekers-tron-se,https://bestrobotmower.co/mowers/airseekers-tron-se,Airseekers Store,airseekers-store,1099,1299,true
+2026-10-01T19:22:10.312Z,Airseekers Tron,airseekers-tron,https://bestrobotmower.co/mowers/airseekers-tron,Airseekers Store,airseekers-store,1299,1999,true
+2026-10-01T19:22:10.330Z,Airseekers Tron Plus,airseekers-tron-plus,https://bestrobotmower.co/mowers/airseekers-tron-plus,Airseekers Store,airseekers-store,2099,2299,true
+2026-10-01T19:22:10.347Z,Anthbot M5,anthbot-m5,https://bestrobotmower.co/mowers/anthbot-m5,Anthbot Store,anthbot-store,649,799,true
+2026-10-01T19:22:10.364Z,Anthbot M9,anthbot-m9,https://bestrobotmower.co/mowers/anthbot-m9,Anthbot Store,anthbot-store,699,899,true
+2026-10-01T19:22:10.384Z,Anthbot M5 LiDAR,anthbot-m5-lidar,https://bestrobotmower.co/mowers/anthbot-m5-lidar,Anthbot Store,anthbot-store,799,949,true
+2026-10-01T19:22:10.404Z,Anthbot N8,anthbot-n8,https://bestrobotmower.co/mowers/anthbot-n8,Anthbot Store,anthbot-store,1699,,true
+2026-10-01T19:22:10.430Z,Anthbot Genie 600e,anthbot-genie-600e,https://bestrobotmower.co/mowers/anthbot-genie-600e,Anthbot Store,anthbot-store,699,1099,true
+2026-10-01T19:22:10.449Z,Anthbot Genie 1000,anthbot-genie-1000,https://bestrobotmower.co/mowers/anthbot-genie-1000,Anthbot Store,anthbot-store,799,1199,true
+2026-10-01T19:22:10.467Z,Anthbot Genie 3000,anthbot-genie-3000,https://bestrobotmower.co/mowers/anthbot-genie-3000,Anthbot Store,anthbot-store,899,1599,true
+2026-10-02T06:40:54.682Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Abt,abt,1099,,true
+2026-10-02T06:40:56.322Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Abt,abt,2299,,true
+2026-10-02T06:40:58.084Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Abt,abt,2799,,true
+2026-10-02T06:41:08.852Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Abt,abt,4499,,true
+2026-10-02T06:41:09.906Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Abt,abt,2499,,true
+2026-10-02T06:41:10.895Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Abt,abt,999,,true
+2026-10-02T06:41:11.960Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Abt,abt,1599,,true
+2026-10-04T06:00:06.060Z,Segway Navimow i105E,navimow-i105e,https://bestrobotmower.co/mowers/segway-navimow-i105e,Segway Navimow Store,segway-store,669,799,true
+2026-10-04T06:00:06.103Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Segway Navimow Store,segway-store,1099,,false
+2026-10-04T06:00:06.120Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Segway Navimow Store,segway-store,2299,,true
+2026-10-04T06:00:06.134Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Segway Navimow Store,segway-store,4499,,true
+2026-10-04T06:00:06.151Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Segway Navimow Store,segway-store,2799,,true
+2026-10-04T06:00:06.166Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Segway Navimow Store,segway-store,999,,true
+2026-10-04T06:00:06.181Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Segway Navimow Store,segway-store,1599,,true
+2026-10-04T06:00:06.195Z,Segway Navimow H2,navimow-h2,https://bestrobotmower.co/mowers/segway-navimow-h2,Segway Navimow Store,segway-store,1799,,true
+2026-10-04T06:00:06.211Z,Segway Navimow H220,navimow-h220,https://bestrobotmower.co/mowers/segway-navimow-h220,Segway Navimow Store,segway-store,2199,,true
+2026-10-04T06:00:06.229Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Segway Navimow Store,segway-store,2499,,false
+2026-10-04T06:00:06.245Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Segway Navimow Store,segway-store,2999,,false
+2026-10-04T06:00:06.260Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Abt,abt,1099,,true
+2026-10-04T06:00:06.285Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Abt,abt,2299,,true
+2026-10-04T06:00:06.300Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Abt,abt,2799,,true
+2026-10-04T06:00:06.316Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Abt,abt,4499,,true
+2026-10-04T06:00:06.330Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Abt,abt,2499,,true
+2026-10-04T06:00:06.346Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Abt,abt,2999,,true
+2026-10-04T06:00:06.360Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Abt,abt,999,,true
+2026-10-04T06:00:06.376Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Abt,abt,1599,,true
+2026-10-04T06:00:06.390Z,Mammotion Luba 2 AWD 5000,luba-2-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000,Mammotion Store,mammotion-store,2999,,false
+2026-10-04T06:00:06.406Z,Mammotion Yuka Mini,yuka-mini,https://bestrobotmower.co/mowers/mammotion-yuka-mini,Mammotion Store,mammotion-store,1299,,false
+2026-10-04T06:00:06.420Z,Mammotion Luba 3 AWD,luba-3-awd,https://bestrobotmower.co/mowers/mammotion-luba-3-awd,Mammotion Store,mammotion-store,2109,2799,true
+2026-10-04T06:00:06.436Z,Mammotion Luba 3 AWD 5000,luba-3-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-3-awd-5000,Mammotion Store,mammotion-store,3299,,true
+2026-10-04T06:00:06.450Z,Mammotion Luba Mini 2 AWD,luba-mini-2-awd,https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd,Mammotion Store,mammotion-store,1699,1999,true
+2026-10-04T06:00:06.465Z,Mammotion Yuka Mini 2,yuka-mini-2,https://bestrobotmower.co/mowers/mammotion-yuka-mini-2,Mammotion Store,mammotion-store,1399,1559,false
+2026-10-04T06:00:06.480Z,Dreame Roboticmower A3 AWD Pro,dreame-a3-awd-pro,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro,Dreame Yard Care Store,dreame-store,1699.99,3099.99,true
+2026-10-04T06:00:06.497Z,Dreame Roboticmower A3 AWD Pro 3500,dreame-a3-awd-pro-3500,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-3500,Dreame Yard Care Store,dreame-store,1999.99,3199.99,true
+2026-10-04T06:00:06.510Z,Dreame Roboticmower A3 AWD Pro 5000,dreame-a3-awd-pro-5000,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-5000,Dreame Yard Care Store,dreame-store,2799.99,3499.99,true
+2026-10-04T06:00:06.527Z,Dreame A3 AWD,dreame-a3-awd,https://bestrobotmower.co/mowers/dreame-a3-awd,Dreame Yard Care Store,dreame-store,1399.99,1999.99,true
+2026-10-04T06:00:06.541Z,Dreame A3 AWD 2000,dreame-a3-awd-2000,https://bestrobotmower.co/mowers/dreame-a3-awd-2000,Dreame Yard Care Store,dreame-store,1699.99,2199.99,true
+2026-10-04T06:00:06.556Z,Sunseeker X3 Plus,sunseeker-x3-plus,https://bestrobotmower.co/mowers/sunseeker-x3-plus,Sunseeker Store,sunseeker-store,999.99,1599.99,true
+2026-10-04T06:00:06.570Z,Sunseeker X5,sunseeker-x5,https://bestrobotmower.co/mowers/sunseeker-x5,Sunseeker Store,sunseeker-store,1499,1999.99,true
+2026-10-04T06:00:06.586Z,Sunseeker S4,sunseeker-s4,https://bestrobotmower.co/mowers/sunseeker-s4,Sunseeker Store,sunseeker-store,1299.99,1799.99,true
+2026-10-04T06:00:06.602Z,Sunseeker V3,sunseeker-v3,https://bestrobotmower.co/mowers/sunseeker-v3,Sunseeker Store,sunseeker-store,599.99,999.99,true
+2026-10-04T06:00:06.618Z,MOVA LiDAX Ultra 3000 AWD,mova-lidax-ultra-3000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd,MOVA Store,mova-store,2199,2999,true
+2026-10-04T06:00:06.632Z,MOVA LiDAX Ultra 1000,mova-lidax-ultra-1000,https://bestrobotmower.co/mowers/mova-lidax-ultra-1000,MOVA Store,mova-store,949,1299,true
+2026-10-04T06:00:06.648Z,MOVA LiDAX Ultra 2000 AWD,mova-lidax-ultra-2000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd,MOVA Store,mova-store,1799,2299,true
+2026-10-04T06:00:06.669Z,MOVA LiDAX Ultra 2000,mova-lidax-ultra-2000,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000,MOVA Store,mova-store,1099,1799,true
+2026-10-04T06:00:06.686Z,MOVA LiDAX Pro 800,mova-lidax-pro-800,https://bestrobotmower.co/mowers/mova-lidax-pro-800,MOVA Store,mova-store,849,1099,true
+2026-10-04T06:00:06.700Z,Lymow One Plus,lymow-one-plus,https://bestrobotmower.co/mowers/lymow-one-plus,Lymow Store,lymow-store,2799,3199,true
+2026-10-04T06:00:06.716Z,Airseekers Tron SE,airseekers-tron-se,https://bestrobotmower.co/mowers/airseekers-tron-se,Airseekers Store,airseekers-store,1099,1299,true
+2026-10-04T06:00:06.730Z,Airseekers Tron,airseekers-tron,https://bestrobotmower.co/mowers/airseekers-tron,Airseekers Store,airseekers-store,1299,1999,true
+2026-10-04T06:00:06.746Z,Airseekers Tron Plus,airseekers-tron-plus,https://bestrobotmower.co/mowers/airseekers-tron-plus,Airseekers Store,airseekers-store,2099,2299,true
+2026-10-04T06:00:06.761Z,Anthbot M5,anthbot-m5,https://bestrobotmower.co/mowers/anthbot-m5,Anthbot Store,anthbot-store,649,799,true
+2026-10-04T06:00:06.777Z,Anthbot M9,anthbot-m9,https://bestrobotmower.co/mowers/anthbot-m9,Anthbot Store,anthbot-store,699,899,true
+2026-10-04T06:00:06.791Z,Anthbot M5 LiDAR,anthbot-m5-lidar,https://bestrobotmower.co/mowers/anthbot-m5-lidar,Anthbot Store,anthbot-store,799,949,true
+2026-10-04T06:00:06.807Z,Anthbot N8,anthbot-n8,https://bestrobotmower.co/mowers/anthbot-n8,Anthbot Store,anthbot-store,1699,,true
+2026-10-04T06:00:06.821Z,Anthbot Genie 600e,anthbot-genie-600e,https://bestrobotmower.co/mowers/anthbot-genie-600e,Anthbot Store,anthbot-store,699,1099,true
+2026-10-04T06:00:06.837Z,Anthbot Genie 1000,anthbot-genie-1000,https://bestrobotmower.co/mowers/anthbot-genie-1000,Anthbot Store,anthbot-store,799,1199,true
+2026-10-04T06:00:06.852Z,Anthbot Genie 3000,anthbot-genie-3000,https://bestrobotmower.co/mowers/anthbot-genie-3000,Anthbot Store,anthbot-store,899,1599,true
+2026-10-04T06:00:06.869Z,Sunseeker X7 Gen 2,sunseeker-x7-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-gen-2,Sunseeker Store,sunseeker-store,2599,,true
+2026-10-04T06:00:06.884Z,Sunseeker X7 Plus Gen 2,sunseeker-x7-plus-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-plus-gen-2,Sunseeker Store,sunseeker-store,3299,,true
+2026-10-04T06:00:06.901Z,Yarbo Y40 Lawn Mower Pro,yarbo-y40-lawn-mower-pro,https://bestrobotmower.co/mowers/yarbo-y40-lawn-mower-pro,Yarbo Store,yarbo-store,5499,5999,true
+2026-10-05T08:00:08.071Z,Segway Navimow i105E,navimow-i105e,https://bestrobotmower.co/mowers/segway-navimow-i105e,Segway Navimow Store,segway-store,669,799,true
+2026-10-05T08:00:08.108Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Segway Navimow Store,segway-store,1099,,false
+2026-10-05T08:00:08.124Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Segway Navimow Store,segway-store,2299,,true
+2026-10-05T08:00:08.139Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Segway Navimow Store,segway-store,4499,,true
+2026-10-05T08:00:08.156Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Segway Navimow Store,segway-store,2799,,true
+2026-10-05T08:00:08.171Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Segway Navimow Store,segway-store,999,,true
+2026-10-05T08:00:08.187Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Segway Navimow Store,segway-store,1599,,true
+2026-10-05T08:00:08.202Z,Segway Navimow H2,navimow-h2,https://bestrobotmower.co/mowers/segway-navimow-h2,Segway Navimow Store,segway-store,1799,,true
+2026-10-05T08:00:08.218Z,Segway Navimow H220,navimow-h220,https://bestrobotmower.co/mowers/segway-navimow-h220,Segway Navimow Store,segway-store,2199,,true
+2026-10-05T08:00:08.234Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Segway Navimow Store,segway-store,2499,,false
+2026-10-05T08:00:08.255Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Segway Navimow Store,segway-store,2999,,false
+2026-10-05T08:00:08.269Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Abt,abt,1099,,true
+2026-10-05T08:00:08.285Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Abt,abt,2299,,true
+2026-10-05T08:00:08.299Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Abt,abt,2799,,true
+2026-10-05T08:00:08.316Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Abt,abt,4499,,true
+2026-10-05T08:00:08.331Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Abt,abt,2499,,true
+2026-10-05T08:00:08.347Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Abt,abt,2999,,true
+2026-10-05T08:00:08.361Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Abt,abt,999,,true
+2026-10-05T08:00:08.378Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Abt,abt,1599,,true
+2026-10-05T08:00:08.393Z,Mammotion Luba 2 AWD 5000,luba-2-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000,Mammotion Store,mammotion-store,2999,,false
+2026-10-05T08:00:08.409Z,Mammotion Yuka Mini,yuka-mini,https://bestrobotmower.co/mowers/mammotion-yuka-mini,Mammotion Store,mammotion-store,1299,,false
+2026-10-05T08:00:08.424Z,Mammotion Luba 3 AWD,luba-3-awd,https://bestrobotmower.co/mowers/mammotion-luba-3-awd,Mammotion Store,mammotion-store,2109,2799,true
+2026-10-05T08:00:08.441Z,Mammotion Luba 3 AWD 5000,luba-3-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-3-awd-5000,Mammotion Store,mammotion-store,3299,,true
+2026-10-05T08:00:08.455Z,Mammotion Luba Mini 2 AWD,luba-mini-2-awd,https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd,Mammotion Store,mammotion-store,1699,1999,true
+2026-10-05T08:00:08.472Z,Mammotion Yuka Mini 2,yuka-mini-2,https://bestrobotmower.co/mowers/mammotion-yuka-mini-2,Mammotion Store,mammotion-store,1399,1559,false
+2026-10-05T08:00:08.486Z,Dreame Roboticmower A3 AWD Pro,dreame-a3-awd-pro,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro,Dreame Yard Care Store,dreame-store,1699.99,3099.99,true
+2026-10-05T08:00:08.503Z,Dreame Roboticmower A3 AWD Pro 3500,dreame-a3-awd-pro-3500,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-3500,Dreame Yard Care Store,dreame-store,1999.99,3199.99,true
+2026-10-05T08:00:08.517Z,Dreame Roboticmower A3 AWD Pro 5000,dreame-a3-awd-pro-5000,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-5000,Dreame Yard Care Store,dreame-store,2799.99,3499.99,true
+2026-10-05T08:00:08.533Z,Dreame A3 AWD,dreame-a3-awd,https://bestrobotmower.co/mowers/dreame-a3-awd,Dreame Yard Care Store,dreame-store,1399.99,1999.99,true
+2026-10-05T08:00:08.548Z,Dreame A3 AWD 2000,dreame-a3-awd-2000,https://bestrobotmower.co/mowers/dreame-a3-awd-2000,Dreame Yard Care Store,dreame-store,1699.99,2199.99,true
+2026-10-05T08:00:08.565Z,Sunseeker X3 Plus,sunseeker-x3-plus,https://bestrobotmower.co/mowers/sunseeker-x3-plus,Sunseeker Store,sunseeker-store,999.99,1599.99,true
+2026-10-05T08:00:08.579Z,Sunseeker X5,sunseeker-x5,https://bestrobotmower.co/mowers/sunseeker-x5,Sunseeker Store,sunseeker-store,1499,1999.99,true
+2026-10-05T08:00:08.595Z,Sunseeker S4,sunseeker-s4,https://bestrobotmower.co/mowers/sunseeker-s4,Sunseeker Store,sunseeker-store,1299.99,1799.99,true
+2026-10-05T08:00:08.610Z,Sunseeker V3,sunseeker-v3,https://bestrobotmower.co/mowers/sunseeker-v3,Sunseeker Store,sunseeker-store,599.99,999.99,true
+2026-10-05T08:00:08.626Z,MOVA LiDAX Ultra 3000 AWD,mova-lidax-ultra-3000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd,MOVA Store,mova-store,2199,2999,true
+2026-10-05T08:00:08.640Z,MOVA LiDAX Ultra 1000,mova-lidax-ultra-1000,https://bestrobotmower.co/mowers/mova-lidax-ultra-1000,MOVA Store,mova-store,949,1299,true
+2026-10-05T08:00:08.657Z,MOVA LiDAX Ultra 2000 AWD,mova-lidax-ultra-2000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd,MOVA Store,mova-store,1799,2299,true
+2026-10-05T08:00:08.672Z,MOVA LiDAX Ultra 2000,mova-lidax-ultra-2000,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000,MOVA Store,mova-store,1099,1799,true
+2026-10-05T08:00:08.688Z,MOVA LiDAX Pro 800,mova-lidax-pro-800,https://bestrobotmower.co/mowers/mova-lidax-pro-800,MOVA Store,mova-store,849,1099,true
+2026-10-05T08:00:08.703Z,Lymow One Plus,lymow-one-plus,https://bestrobotmower.co/mowers/lymow-one-plus,Lymow Store,lymow-store,2799,3199,true
+2026-10-05T08:00:08.722Z,Airseekers Tron SE,airseekers-tron-se,https://bestrobotmower.co/mowers/airseekers-tron-se,Airseekers Store,airseekers-store,1099,1299,true
+2026-10-05T08:00:08.736Z,Airseekers Tron,airseekers-tron,https://bestrobotmower.co/mowers/airseekers-tron,Airseekers Store,airseekers-store,1299,1999,true
+2026-10-05T08:00:08.752Z,Airseekers Tron Plus,airseekers-tron-plus,https://bestrobotmower.co/mowers/airseekers-tron-plus,Airseekers Store,airseekers-store,2099,2299,true
+2026-10-05T08:00:08.766Z,Anthbot M5,anthbot-m5,https://bestrobotmower.co/mowers/anthbot-m5,Anthbot Store,anthbot-store,649,799,true
+2026-10-05T08:00:08.782Z,Anthbot M9,anthbot-m9,https://bestrobotmower.co/mowers/anthbot-m9,Anthbot Store,anthbot-store,699,899,true
+2026-10-05T08:00:08.796Z,Anthbot M5 LiDAR,anthbot-m5-lidar,https://bestrobotmower.co/mowers/anthbot-m5-lidar,Anthbot Store,anthbot-store,799,949,true
+2026-10-05T08:00:08.814Z,Anthbot N8,anthbot-n8,https://bestrobotmower.co/mowers/anthbot-n8,Anthbot Store,anthbot-store,1699,,true
+2026-10-05T08:00:08.828Z,Anthbot Genie 600e,anthbot-genie-600e,https://bestrobotmower.co/mowers/anthbot-genie-600e,Anthbot Store,anthbot-store,699,1099,true
+2026-10-05T08:00:08.844Z,Anthbot Genie 1000,anthbot-genie-1000,https://bestrobotmower.co/mowers/anthbot-genie-1000,Anthbot Store,anthbot-store,799,1199,true
+2026-10-05T08:00:08.858Z,Anthbot Genie 3000,anthbot-genie-3000,https://bestrobotmower.co/mowers/anthbot-genie-3000,Anthbot Store,anthbot-store,899,1599,true
+2026-10-05T08:00:08.875Z,Sunseeker X7 Gen 2,sunseeker-x7-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-gen-2,Sunseeker Store,sunseeker-store,2599,,true
+2026-10-05T08:00:08.889Z,Sunseeker X7 Plus Gen 2,sunseeker-x7-plus-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-plus-gen-2,Sunseeker Store,sunseeker-store,3299,,true
+2026-10-05T08:00:08.905Z,Yarbo Y40 Lawn Mower Pro,yarbo-y40-lawn-mower-pro,https://bestrobotmower.co/mowers/yarbo-y40-lawn-mower-pro,Yarbo Store,yarbo-store,5499,5999,true
+2026-10-06T08:00:09.010Z,Segway Navimow i105E,navimow-i105e,https://bestrobotmower.co/mowers/segway-navimow-i105e,Segway Navimow Store,segway-store,799,,true
+2026-10-06T08:00:09.056Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Segway Navimow Store,segway-store,1099,,false
+2026-10-06T08:00:09.070Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Segway Navimow Store,segway-store,2299,,true
+2026-10-06T08:00:09.086Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Segway Navimow Store,segway-store,4499,,true
+2026-10-06T08:00:09.099Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Segway Navimow Store,segway-store,2799,,true
+2026-10-06T08:00:09.115Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Segway Navimow Store,segway-store,849,999,true
+2026-10-06T08:00:09.128Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Segway Navimow Store,segway-store,1329,1599,true
+2026-10-06T08:00:09.144Z,Segway Navimow H2,navimow-h2,https://bestrobotmower.co/mowers/segway-navimow-h2,Segway Navimow Store,segway-store,1799,,true
+2026-10-06T08:00:09.158Z,Segway Navimow H220,navimow-h220,https://bestrobotmower.co/mowers/segway-navimow-h220,Segway Navimow Store,segway-store,2199,,true
+2026-10-06T08:00:09.174Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Segway Navimow Store,segway-store,2499,,true
+2026-10-06T08:00:09.188Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Segway Navimow Store,segway-store,2999,,false
+2026-10-06T08:00:09.203Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Abt,abt,1099,,true
+2026-10-06T08:00:09.217Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Abt,abt,2299,,true
+2026-10-06T08:00:09.232Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Abt,abt,2799,,true
+2026-10-06T08:00:09.246Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Abt,abt,4499,,true
+2026-10-06T08:00:09.261Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Abt,abt,2499,,true
+2026-10-06T08:00:09.275Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Abt,abt,2999,,true
+2026-10-06T08:00:09.290Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Abt,abt,999,,true
+2026-10-06T08:00:09.305Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Abt,abt,1599,,true
+2026-10-06T08:00:09.319Z,Mammotion Luba 2 AWD 5000,luba-2-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000,Mammotion Store,mammotion-store,2999,,false
+2026-10-06T08:00:09.335Z,Mammotion Yuka Mini,yuka-mini,https://bestrobotmower.co/mowers/mammotion-yuka-mini,Mammotion Store,mammotion-store,1299,,false
+2026-10-06T08:00:09.353Z,Mammotion Luba 3 AWD,luba-3-awd,https://bestrobotmower.co/mowers/mammotion-luba-3-awd,Mammotion Store,mammotion-store,2109,2799,true
+2026-10-06T08:00:09.367Z,Mammotion Luba 3 AWD 5000,luba-3-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-3-awd-5000,Mammotion Store,mammotion-store,3299,,true
+2026-10-06T08:00:09.381Z,Mammotion Luba Mini 2 AWD,luba-mini-2-awd,https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd,Mammotion Store,mammotion-store,1699,1999,true
+2026-10-06T08:00:09.395Z,Mammotion Yuka Mini 2,yuka-mini-2,https://bestrobotmower.co/mowers/mammotion-yuka-mini-2,Mammotion Store,mammotion-store,1399,1559,false
+2026-10-06T08:00:09.410Z,Dreame Roboticmower A3 AWD Pro,dreame-a3-awd-pro,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro,Dreame Yard Care Store,dreame-store,1699.99,3099.99,true
+2026-10-06T08:00:09.426Z,Dreame Roboticmower A3 AWD Pro 3500,dreame-a3-awd-pro-3500,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-3500,Dreame Yard Care Store,dreame-store,1899.99,3199.99,true
+2026-10-06T08:00:09.441Z,Dreame Roboticmower A3 AWD Pro 5000,dreame-a3-awd-pro-5000,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-5000,Dreame Yard Care Store,dreame-store,2799.99,3499.99,true
+2026-10-06T08:00:09.455Z,Dreame A3 AWD,dreame-a3-awd,https://bestrobotmower.co/mowers/dreame-a3-awd,Dreame Yard Care Store,dreame-store,1099.99,1999.99,true
+2026-10-06T08:00:09.470Z,Dreame A3 AWD 2000,dreame-a3-awd-2000,https://bestrobotmower.co/mowers/dreame-a3-awd-2000,Dreame Yard Care Store,dreame-store,1539.99,2199.99,true
+2026-10-06T08:00:09.484Z,Sunseeker X3 Plus,sunseeker-x3-plus,https://bestrobotmower.co/mowers/sunseeker-x3-plus,Sunseeker Store,sunseeker-store,999.99,1599.99,true
+2026-10-06T08:00:09.499Z,Sunseeker X5,sunseeker-x5,https://bestrobotmower.co/mowers/sunseeker-x5,Sunseeker Store,sunseeker-store,1499,1999.99,true
+2026-10-06T08:00:09.514Z,Sunseeker S4,sunseeker-s4,https://bestrobotmower.co/mowers/sunseeker-s4,Sunseeker Store,sunseeker-store,1299.99,1799.99,true
+2026-10-06T08:00:09.529Z,Sunseeker V3,sunseeker-v3,https://bestrobotmower.co/mowers/sunseeker-v3,Sunseeker Store,sunseeker-store,599.99,999.99,true
+2026-10-06T08:00:09.543Z,MOVA LiDAX Ultra 3000 AWD,mova-lidax-ultra-3000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd,MOVA Store,mova-store,2199,2999,true
+2026-10-06T08:00:09.558Z,MOVA LiDAX Ultra 1000,mova-lidax-ultra-1000,https://bestrobotmower.co/mowers/mova-lidax-ultra-1000,MOVA Store,mova-store,913,1299,true
+2026-10-06T08:00:09.573Z,MOVA LiDAX Ultra 2000 AWD,mova-lidax-ultra-2000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd,MOVA Store,mova-store,1799,2299,true
+2026-10-06T08:00:09.587Z,MOVA LiDAX Ultra 2000,mova-lidax-ultra-2000,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000,MOVA Store,mova-store,1099,1799,true
+2026-10-06T08:00:09.601Z,MOVA LiDAX Pro 800,mova-lidax-pro-800,https://bestrobotmower.co/mowers/mova-lidax-pro-800,MOVA Store,mova-store,1099,,true
+2026-10-06T08:00:09.616Z,Lymow One Plus,lymow-one-plus,https://bestrobotmower.co/mowers/lymow-one-plus,Lymow Store,lymow-store,2799,3199,true
+2026-10-06T08:00:09.630Z,Airseekers Tron SE,airseekers-tron-se,https://bestrobotmower.co/mowers/airseekers-tron-se,Airseekers Store,airseekers-store,1099,1299,true
+2026-10-06T08:00:09.645Z,Airseekers Tron,airseekers-tron,https://bestrobotmower.co/mowers/airseekers-tron,Airseekers Store,airseekers-store,1299,1999,true
+2026-10-06T08:00:09.659Z,Airseekers Tron Plus,airseekers-tron-plus,https://bestrobotmower.co/mowers/airseekers-tron-plus,Airseekers Store,airseekers-store,2099,2299,true
+2026-10-06T08:00:09.674Z,Anthbot M5,anthbot-m5,https://bestrobotmower.co/mowers/anthbot-m5,Anthbot Store,anthbot-store,649,799,true
+2026-10-06T08:00:09.688Z,Anthbot M9,anthbot-m9,https://bestrobotmower.co/mowers/anthbot-m9,Anthbot Store,anthbot-store,699,899,true
+2026-10-06T08:00:09.702Z,Anthbot M5 LiDAR,anthbot-m5-lidar,https://bestrobotmower.co/mowers/anthbot-m5-lidar,Anthbot Store,anthbot-store,799,949,true
+2026-10-06T08:00:09.717Z,Anthbot N8,anthbot-n8,https://bestrobotmower.co/mowers/anthbot-n8,Anthbot Store,anthbot-store,1699,,true
+2026-10-06T08:00:09.732Z,Anthbot Genie 600e,anthbot-genie-600e,https://bestrobotmower.co/mowers/anthbot-genie-600e,Anthbot Store,anthbot-store,699,1099,true
+2026-10-06T08:00:09.747Z,Anthbot Genie 1000,anthbot-genie-1000,https://bestrobotmower.co/mowers/anthbot-genie-1000,Anthbot Store,anthbot-store,799,1199,true
+2026-10-06T08:00:09.762Z,Anthbot Genie 3000,anthbot-genie-3000,https://bestrobotmower.co/mowers/anthbot-genie-3000,Anthbot Store,anthbot-store,899,1599,true
+2026-10-06T08:00:09.776Z,Sunseeker X7 Gen 2,sunseeker-x7-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-gen-2,Sunseeker Store,sunseeker-store,2599,,true
+2026-10-06T08:00:09.791Z,Sunseeker X7 Plus Gen 2,sunseeker-x7-plus-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-plus-gen-2,Sunseeker Store,sunseeker-store,3299,,true
+2026-10-06T08:00:09.805Z,Yarbo Y40 Lawn Mower Pro,yarbo-y40-lawn-mower-pro,https://bestrobotmower.co/mowers/yarbo-y40-lawn-mower-pro,Yarbo Store,yarbo-store,4899,5999,true
+2026-10-07T08:00:08.626Z,Segway Navimow i105E,navimow-i105e,https://bestrobotmower.co/mowers/segway-navimow-i105e,Segway Navimow Store,segway-store,799,,true
+2026-10-07T08:00:08.668Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Segway Navimow Store,segway-store,1099,,false
+2026-10-07T08:00:08.684Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Segway Navimow Store,segway-store,2299,,true
+2026-10-07T08:00:08.699Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Segway Navimow Store,segway-store,4499,,true
+2026-10-07T08:00:08.715Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Segway Navimow Store,segway-store,2799,,true
+2026-10-07T08:00:08.730Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Segway Navimow Store,segway-store,849,999,true
+2026-10-07T08:00:08.746Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Segway Navimow Store,segway-store,1329,1599,true
+2026-10-07T08:00:08.762Z,Segway Navimow H2,navimow-h2,https://bestrobotmower.co/mowers/segway-navimow-h2,Segway Navimow Store,segway-store,1799,,true
+2026-10-07T08:00:08.778Z,Segway Navimow H220,navimow-h220,https://bestrobotmower.co/mowers/segway-navimow-h220,Segway Navimow Store,segway-store,2199,,true
+2026-10-07T08:00:08.793Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Segway Navimow Store,segway-store,2499,,true
+2026-10-07T08:00:08.808Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Segway Navimow Store,segway-store,2999,,false
+2026-10-07T08:00:08.822Z,Segway Navimow i110N,navimow-i110n,https://bestrobotmower.co/mowers/segway-navimow-i110n,Abt,abt,1099,,true
+2026-10-07T08:00:08.838Z,Segway Navimow X330,navimow-x330,https://bestrobotmower.co/mowers/segway-navimow-x330,Abt,abt,1998,,true
+2026-10-07T08:00:08.853Z,Segway Navimow X350,navimow-x350,https://bestrobotmower.co/mowers/segway-navimow-x350,Abt,abt,2448,,true
+2026-10-07T08:00:08.868Z,Segway Navimow X390,navimow-x390,https://bestrobotmower.co/mowers/segway-navimow-x390,Abt,abt,3948,,true
+2026-10-07T08:00:08.884Z,Segway Navimow X4,navimow-x4,https://bestrobotmower.co/mowers/segway-navimow-x4,Abt,abt,2499,,true
+2026-10-07T08:00:08.900Z,Segway Navimow X450,navimow-x450,https://bestrobotmower.co/mowers/segway-navimow-x450,Abt,abt,2999,,true
+2026-10-07T08:00:08.915Z,Segway Navimow i2 AWD,navimow-i2-awd,https://bestrobotmower.co/mowers/segway-navimow-i2-awd,Abt,abt,999,,true
+2026-10-07T08:00:08.930Z,Segway Navimow i2 LiDAR,navimow-i2-lidar,https://bestrobotmower.co/mowers/segway-navimow-i2-lidar,Abt,abt,1599,,true
+2026-10-07T08:00:08.945Z,Mammotion Luba 2 AWD 5000,luba-2-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-2-awd-5000,Mammotion Store,mammotion-store,2999,,false
+2026-10-07T08:00:08.963Z,Mammotion Yuka Mini,yuka-mini,https://bestrobotmower.co/mowers/mammotion-yuka-mini,Mammotion Store,mammotion-store,1299,,false
+2026-10-07T08:00:08.980Z,Mammotion Luba 3 AWD,luba-3-awd,https://bestrobotmower.co/mowers/mammotion-luba-3-awd,Mammotion Store,mammotion-store,2109,2799,true
+2026-10-07T08:00:08.996Z,Mammotion Luba 3 AWD 5000,luba-3-awd-5000,https://bestrobotmower.co/mowers/mammotion-luba-3-awd-5000,Mammotion Store,mammotion-store,3299,,true
+2026-10-07T08:00:09.012Z,Mammotion Luba Mini 2 AWD,luba-mini-2-awd,https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd,Mammotion Store,mammotion-store,1699,1999,true
+2026-10-07T08:00:09.028Z,Mammotion Yuka Mini 2,yuka-mini-2,https://bestrobotmower.co/mowers/mammotion-yuka-mini-2,Mammotion Store,mammotion-store,1399,1559,false
+2026-10-07T08:00:09.043Z,Dreame Roboticmower A3 AWD Pro,dreame-a3-awd-pro,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro,Dreame Yard Care Store,dreame-store,1699.99,3099.99,true
+2026-10-07T08:00:09.058Z,Dreame Roboticmower A3 AWD Pro 3500,dreame-a3-awd-pro-3500,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-3500,Dreame Yard Care Store,dreame-store,1899.99,3199.99,true
+2026-10-07T08:00:09.074Z,Dreame Roboticmower A3 AWD Pro 5000,dreame-a3-awd-pro-5000,https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-5000,Dreame Yard Care Store,dreame-store,2799.99,3499.99,true
+2026-10-07T08:00:09.090Z,Dreame A3 AWD,dreame-a3-awd,https://bestrobotmower.co/mowers/dreame-a3-awd,Dreame Yard Care Store,dreame-store,1099.99,1999.99,true
+2026-10-07T08:00:09.105Z,Dreame A3 AWD 2000,dreame-a3-awd-2000,https://bestrobotmower.co/mowers/dreame-a3-awd-2000,Dreame Yard Care Store,dreame-store,1539.99,2199.99,true
+2026-10-07T08:00:09.121Z,Sunseeker X3 Plus,sunseeker-x3-plus,https://bestrobotmower.co/mowers/sunseeker-x3-plus,Sunseeker Store,sunseeker-store,899.99,1599.99,true
+2026-10-07T08:00:09.135Z,Sunseeker X5,sunseeker-x5,https://bestrobotmower.co/mowers/sunseeker-x5,Sunseeker Store,sunseeker-store,1399.99,1999.99,true
+2026-10-07T08:00:09.150Z,Sunseeker S4,sunseeker-s4,https://bestrobotmower.co/mowers/sunseeker-s4,Sunseeker Store,sunseeker-store,999.99,1799.99,true
+2026-10-07T08:00:09.166Z,Sunseeker V3,sunseeker-v3,https://bestrobotmower.co/mowers/sunseeker-v3,Sunseeker Store,sunseeker-store,599.99,999.99,true
+2026-10-07T08:00:09.181Z,MOVA LiDAX Ultra 3000 AWD,mova-lidax-ultra-3000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd,MOVA Store,mova-store,2199,2999,true
+2026-10-07T08:00:09.195Z,MOVA LiDAX Ultra 1000,mova-lidax-ultra-1000,https://bestrobotmower.co/mowers/mova-lidax-ultra-1000,MOVA Store,mova-store,899,1299,true
+2026-10-07T08:00:09.213Z,MOVA LiDAX Ultra 2000 AWD,mova-lidax-ultra-2000-awd,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000-awd,MOVA Store,mova-store,1799,2299,true
+2026-10-07T08:00:09.227Z,MOVA LiDAX Ultra 2000,mova-lidax-ultra-2000,https://bestrobotmower.co/mowers/mova-lidax-ultra-2000,MOVA Store,mova-store,1099,1799,true
+2026-10-07T08:00:09.244Z,MOVA LiDAX Pro 800,mova-lidax-pro-800,https://bestrobotmower.co/mowers/mova-lidax-pro-800,MOVA Store,mova-store,764,1099,true
+2026-10-07T08:00:09.258Z,Lymow One Plus,lymow-one-plus,https://bestrobotmower.co/mowers/lymow-one-plus,Lymow Store,lymow-store,2799,3199,true
+2026-10-07T08:00:09.275Z,Airseekers Tron SE,airseekers-tron-se,https://bestrobotmower.co/mowers/airseekers-tron-se,Airseekers Store,airseekers-store,1099,1299,true
+2026-10-07T08:00:09.290Z,Airseekers Tron,airseekers-tron,https://bestrobotmower.co/mowers/airseekers-tron,Airseekers Store,airseekers-store,1299,1999,true
+2026-10-07T08:00:09.305Z,Airseekers Tron Plus,airseekers-tron-plus,https://bestrobotmower.co/mowers/airseekers-tron-plus,Airseekers Store,airseekers-store,2099,2299,true
+2026-10-07T08:00:09.321Z,Anthbot M5,anthbot-m5,https://bestrobotmower.co/mowers/anthbot-m5,Anthbot Store,anthbot-store,649,799,true
+2026-10-07T08:00:09.337Z,Anthbot M9,anthbot-m9,https://bestrobotmower.co/mowers/anthbot-m9,Anthbot Store,anthbot-store,699,899,true
+2026-10-07T08:00:09.352Z,Anthbot M5 LiDAR,anthbot-m5-lidar,https://bestrobotmower.co/mowers/anthbot-m5-lidar,Anthbot Store,anthbot-store,799,949,true
+2026-10-07T08:00:09.368Z,Anthbot N8,anthbot-n8,https://bestrobotmower.co/mowers/anthbot-n8,Anthbot Store,anthbot-store,1699,,true
+2026-10-07T08:00:09.382Z,Anthbot Genie 600e,anthbot-genie-600e,https://bestrobotmower.co/mowers/anthbot-genie-600e,Anthbot Store,anthbot-store,699,1099,true
+2026-10-07T08:00:09.401Z,Anthbot Genie 1000,anthbot-genie-1000,https://bestrobotmower.co/mowers/anthbot-genie-1000,Anthbot Store,anthbot-store,799,1199,true
+2026-10-07T08:00:09.415Z,Anthbot Genie 3000,anthbot-genie-3000,https://bestrobotmower.co/mowers/anthbot-genie-3000,Anthbot Store,anthbot-store,899,1599,true
+2026-10-07T08:00:09.432Z,Sunseeker X7 Gen 2,sunseeker-x7-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-gen-2,Sunseeker Store,sunseeker-store,2599,,true
+2026-10-07T08:00:09.446Z,Sunseeker X7 Plus Gen 2,sunseeker-x7-plus-gen-2,https://bestrobotmower.co/mowers/sunseeker-x7-plus-gen-2,Sunseeker Store,sunseeker-store,3299,,true
+2026-10-07T08:00:09.461Z,Yarbo Y40 Lawn Mower Pro,yarbo-y40-lawn-mower-pro,https://bestrobotmower.co/mowers/yarbo-y40-lawn-mower-pro,Yarbo Store,yarbo-store,4899,5999,true
