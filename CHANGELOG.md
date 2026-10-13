@@ -2,6 +2,22 @@
 
 Each release is a dated, citable snapshot. Robot-mower prices move often; the live, always-current version is at [bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
+## v2026.10.13 (2026-10-13)
+
+**The record through Oct 13, with four more stores read daily.** Prices as of 2026-10-13; 61 of the 76 headline prices are the brand store's live price read from its own product feed (44 in v2026.10.07).
+
+### Added
+
+- **`data/price-history.csv` and `data/price-history.json`** now hold every read from 2026-10-01 to 2026-10-13: 737 reads of 72 prices for 64 models at 14 brand stores and retailers. The Ecovacs, eufy, Husqvarna and Worx stores have been read daily since Oct 8.
+- **The site's first analysis of the record** is linked from the [Daily price record](README.md#daily-price-record) section: [Prime Big Deal Days 2026: What Robot Mower Prices Really Did](https://bestrobotmower.co/blog/prime-big-deal-days-2026-robot-mower-prices?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset), which reads every store price before, during and after Amazon's Oct 6 to 7 event.
+
+### Changed
+
+- **18 headline prices are higher and 3 are lower** than in v2026.10.07, which took its prices on the last day of Prime Big Deal Days (Oct 7). Higher, among them: the Mammotion Luba 3 AWD at $2,799 (from $2,109), the Yarbo Y40 Lawn Mower Pro at $5,999 (from $4,899) and the Ecovacs Goat A2000 LiDAR PRO at $1,999.99 (from $1,399). Lower: the Segway Navimow X4 at $2,161.97 at Abt (from $2,499 at Segway's store), the Ecovacs Goat O1000 LiDAR PRO at $949 (from $1,499.99) and the Segway Navimow i2 AWD at $799 at Abt (from $849 at Segway's store). Which current prices are real drops by the 30-day rule is on the [deals page](https://bestrobotmower.co/deals?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
+- **The Navimow X330, X350 and X390 are cheapest at Segway's own store again** ($2,299, $2,799 and $4,499).
+- **The Worx Landroid Vision WR220 has a price again**: $2,499.99 at the Worx store.
+- **38 coverage-per-dollar sub-scores moved**, the one axis that follows the headline price; 14 overall scores moved by 0.1 or 0.2.
+
 ## v2026.10.07 (2026-10-07)
 
 **Added: the daily store price record.** Prices as of 2026-10-07; 44 of the 76 headline prices are the brand store's live price read from its own product feed.
