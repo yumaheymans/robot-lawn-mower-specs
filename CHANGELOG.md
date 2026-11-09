@@ -2,6 +2,23 @@
 
 Each release is a dated, citable snapshot. Robot-mower prices move often; the live, always-current version is at [bestrobotmower.co/dataset](https://bestrobotmower.co/dataset?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
 
+## v2026.11.08 (2026-11-08)
+
+**The record through Nov 8, with the first week of the Black Friday sales, and an explorer that shows live prices.** Prices as of 2026-11-08; 56 of the 76 headline prices are the seller's live price read from its own product data.
+
+### Added
+
+- **`data/price-history.csv` and `data/price-history.json`** now hold every read from 2026-10-01 to 2026-11-08: 2,637 reads of 72 prices for 64 models at 14 brand stores and retailers. Stores started their Black Friday sales weeks before Nov 27; the site's [Black Friday report](https://bestrobotmower.co/deals/black-friday?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) measures every price from the last read before Nov 1 against the same store's own October prices.
+- **The [explorer](https://yumaheymans.github.io/robot-lawn-mower-specs/) shows live prices.** On load it reads the site's open dataset API and writes today's price, stock, price per m² and score over this release's snapshot, which stays in the page for readers without JavaScript.
+
+### Changed
+
+- **13 headline prices are higher and 4 are lower** than in v2026.10.13. Higher, among them: the Dreame Roboticmower A3 AWD Pro 3500 at $2,599.99 (from $1,899.99), the Ecovacs Goat O1000 LiDAR PRO at $1,499.99 (from $949) and the Sunseeker S4 at $1,279.99 (from $999.99). Lower: the Lymow One Plus at $2,599 (from $3,199), the Airseekers Tron Plus at $1,799 (from $2,099), the Airseekers Tron SE at $899 (from $1,099) and the Anthbot M9 at $699 (from $769). Which current prices are real drops by the 30-day rule is on the [deals page](https://bestrobotmower.co/deals?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset).
+- **Four models carry no price in this release**: the Dreame Roboticmower A1, Worx Landroid Vision WR220, Anthbot Genie 3000 and Husqvarna Automower 420 iQ are sold out at their brand store, so their headline is their Amazon listing, which states its own price.
+- **Abt is the headline seller for the Navimow i2 LiDAR, X330, X350 and X390** at the same price as Segway's own store: where two sellers charge the same price, the site now lists first a seller it earns a commission from (disclosed on the site). The price is unchanged.
+- **`price_source_url` is always the seller's own product page.** In v2026.10.13, 9 rows carried an affiliate tracking link; none do now.
+- **12 overall scores moved** by 0.1 or more, following the coverage-per-dollar axis, which reads the headline price.
+
 ## v2026.10.13 (2026-10-13)
 
 **The record through Oct 13, with four more stores read daily.** Prices as of 2026-10-13; 61 of the 76 headline prices are the brand store's live price read from its own product feed (44 in v2026.10.07).
