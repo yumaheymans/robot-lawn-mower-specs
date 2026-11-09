@@ -1608,5 +1608,48 @@
   });
 })();
 </script>
+<script>
+/* Live prices: the table and cards are a dated snapshot (they stay as the page's content for readers
+   without JavaScript and for crawlers). On load this reads the same rows from BestRobotMower.co's open
+   dataset API (CC BY 4.0, CORS-open) and writes today's price, $/m2, stock and score over the snapshot.
+   If the API cannot be reached, the snapshot and its date stay exactly as published. */
+(function(){
+  if(!window.fetch) return;
+  var API='https://bestrobotmower.co/api/dataset/mowers.json';
+  function money(n){return '$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:(n%1)?2:0,maximumFractionDigits:2});}
+  function slugOf(el){var a=el.querySelector('a[href*="bestrobotmower.co/mowers/"]');if(!a)return null;var m=a.getAttribute('href').match(/\/mowers\/([a-z0-9-]+)/);return m?m[1]:null;}
+  fetch(API,{mode:'cors'}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+    if(!d||!d.rows||!d.rows.length) return;
+    var by={};d.rows.forEach(function(r){by[r.slug]=r;});
+    var tb=document.getElementById('tbl').tBodies[0], rows=[].slice.call(tb.rows), n=0;
+    rows.forEach(function(tr){
+      var r=by[slugOf(tr)];if(!r) return;
+      var c=tr.cells;
+      if(r.bestrobotmower_score!=null){c[1].dataset.sort=r.bestrobotmower_score;c[1].querySelector('.badge').textContent=Number(r.bestrobotmower_score).toFixed(1);tr.dataset.score=r.bestrobotmower_score;}
+      if(r.price_usd!=null){c[6].dataset.sort=r.price_usd;c[6].textContent=money(r.price_usd)+(r.in_stock===false?' (out of stock)':'');}
+      if(r.price_per_m2_usd!=null){c[7].dataset.sort=r.price_per_m2_usd;c[7].textContent=money(r.price_per_m2_usd);}
+      if(r.status) tr.dataset.status=r.status;
+      n++;
+    });
+    [].slice.call(document.querySelectorAll('#cards .card')).forEach(function(card){
+      var r=by[slugOf(card)];if(!r) return;
+      var b=card.querySelector('.card-head .badge');if(b&&r.bestrobotmower_score!=null)b.textContent=Number(r.bestrobotmower_score).toFixed(1);
+      var p=card.querySelector('p.price');
+      if(p&&r.price_usd!=null){
+        p.textContent='';p.appendChild(document.createTextNode('Price: '));
+        var s=document.createElement('b');s.textContent=money(r.price_usd);p.appendChild(s);
+        p.appendChild(document.createTextNode(' at '+(r.price_provider||'the store')+' ('+(r.price_as_of||d.last_modified)+(r.price_is_live?', live store price':'')+(r.in_stock===false?', out of stock':'')+')'+(r.price_per_m2_usd!=null?' · '+money(r.price_per_m2_usd)+'/m²':'')));
+      }
+    });
+    if(!n) return;
+    rows.sort(function(a,b){return parseFloat(b.dataset.score||0)-parseFloat(a.dataset.score||0);});
+    rows.forEach(function(r){tb.appendChild(r);});
+    var day=d.last_modified||'';
+    [].slice.call(document.querySelectorAll('.meta .pill')).forEach(function(p){if(/^Prices as of/.test(p.textContent))p.textContent='Prices live · read '+day;});
+    var disc=document.querySelector('p.disc');
+    if(disc) disc.textContent='*Prices are live from BestRobotMower.co, read '+day+': each is the seller’s current price (the brand store’s own product feed wherever it publishes one) and stock. Open a model page for every seller and the price history.';
+  }).catch(function(){});
+})();
+</script>
 </body>
 </html>
