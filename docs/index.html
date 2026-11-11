@@ -22,6 +22,8 @@
   h1{font-size:30px;line-height:1.2;margin:.3em 0 .2em}
   .lead{color:var(--muted);max-width:70ch}
   .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .event{margin-top:16px;padding:10px 14px;border:1px solid var(--green2);border-radius:10px;background:var(--card);font-size:14px}
+  .event b{color:var(--fg)}
   .pill{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
   .controls{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 12px;align-items:center}
   .controls input,.controls select{background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 10px;font-size:14px}
@@ -66,6 +68,7 @@
   <div class="kicker">Open Dataset · CC BY 4.0</div>
   <h1>Robot Lawn Mower Specs &amp; Scores</h1>
   <p class="lead">Specs, cited sources, price snapshots, and a transparent 0-5 BestRobotMower Score for wire-free and RTK robot lawn mowers. Compiled and computed by BestRobotMower.co, an independent comparison site. Every row links to a full write-up, cited manufacturer sources, and a dated price snapshot on <a href="https://bestrobotmower.co/?utm_source=github&utm_medium=pages&utm_campaign=mower-dataset" rel="noopener">BestRobotMower.co</a>.</p>
+  <p class="event" id="event-note" data-until="2026-12-03T23:59:59Z"><b>Black Friday 2026:</b> which of these store prices are real drops, measured every morning against each store's own prices since Nov 1: <a href="https://bestrobotmower.co/deals/black-friday?utm_source=github&utm_medium=pages&utm_campaign=black-friday" rel="noopener">the Black Friday price report</a>.</p>
   <div class="meta">
     <span class="pill">76 models</span>
     <span class="pill">15 brands</span>
@@ -1651,5 +1654,6 @@
   }).catch(function(){});
 })();
 </script>
+<script>(function(){var n=document.getElementById("event-note");if(n&&Date.now()>Date.parse(n.dataset.until))n.remove();})();</script>
 </body>
 </html>

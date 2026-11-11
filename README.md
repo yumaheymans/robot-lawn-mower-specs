@@ -11,6 +11,8 @@ Every spec links back to the manufacturer source that proves it, and every score
 those specs (no user polls, no opinion). Released under **[CC BY 4.0](LICENSE)** so you can use it freely
 with attribution.
 
+**Black Friday 2026:** [which robot mower store prices are real drops](https://bestrobotmower.co/deals/black-friday?utm_source=github&utm_medium=readme&utm_campaign=black-friday), read every morning since Nov 1 against each store's own prices.
+
 ## 🔎 Explore it in your browser
 
 **[Interactive spec explorer → yumaheymans.github.io/robot-lawn-mower-specs](https://yumaheymans.github.io/robot-lawn-mower-specs/)**
@@ -70,6 +72,7 @@ It is the evidence behind the site's [real robot mower price drops](https://best
 
 Analyses of this record on the site:
 
+- [Black Friday 2026 robot mower deals: which are real](https://bestrobotmower.co/deals/black-friday?utm_source=github&utm_medium=readme&utm_campaign=black-friday), measured every morning from Nov 1 against each store's own prices (live through Dec 3)
 - [Prime Big Deal Days 2026: What Robot Mower Prices Really Did](https://bestrobotmower.co/blog/prime-big-deal-days-2026-robot-mower-prices?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset)
 
 | Column | Description |
