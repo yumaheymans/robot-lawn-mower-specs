@@ -49,6 +49,8 @@ Amazon listings state their own prices, so none is counted here. Today's list: [
 </details>
 <!-- bf-drops:end -->
 
+**By budget, with today's store prices:** [best robot mower under $1,000](https://bestrobotmower.co/best-for/under-1000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset), [under $1,500](https://bestrobotmower.co/best-for/under-1500?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) and [under $2,000](https://bestrobotmower.co/best-for/under-2000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset), each ranked by the 0-5 score.
+
 ## 🔎 Explore it in your browser
 
 **[Interactive spec explorer → yumaheymans.github.io/robot-lawn-mower-specs](https://yumaheymans.github.io/robot-lawn-mower-specs/)**
