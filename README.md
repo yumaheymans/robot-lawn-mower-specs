@@ -15,7 +15,7 @@ with attribution.
 
 <!-- bf-drops:start -->
 <details>
-<summary><b>25 real Black Friday price drops as of Nov 23 (UTC)</b>: store prices below every price the same store charged in the 30 days before</summary>
+<summary><b>25 real Black Friday price drops as of Nov 25 (UTC)</b>: store prices below every price the same store charged in the 30 days before</summary>
 
 | Model | Store | Now | Was |
 |---|---|---|---|
