@@ -49,6 +49,8 @@ Amazon listings state their own prices, so none is counted here. Today's list: [
 </details>
 <!-- bf-drops:end -->
 
+**Giving one as a gift?** [The robot mower gift guide](https://bestrobotmower.co/gifts?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset): the best mowers to give in four budgets, with today's real price drops among them and how to match one to someone else's lawn.
+
 **By budget, with today's store prices:** [best robot mower under $1,000](https://bestrobotmower.co/best-for/under-1000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset), [under $1,500](https://bestrobotmower.co/best-for/under-1500?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset) and [under $2,000](https://bestrobotmower.co/best-for/under-2000?utm_source=github&utm_medium=readme&utm_campaign=mower-dataset), each ranked by the 0-5 score.
 
 ## 🔎 Explore it in your browser
