@@ -15,7 +15,7 @@ with attribution.
 
 <!-- bf-drops:start -->
 <details>
-<summary><b>25 real Black Friday price drops as of Nov 25 (UTC)</b>: store prices below every price the same store charged in the 30 days before</summary>
+<summary><b>25 real Black Friday price drops as of Nov 27 (UTC)</b>: store prices below every price the same store charged in the 30 days before</summary>
 
 | Model | Store | Now | Was |
 |---|---|---|---|
@@ -31,7 +31,6 @@ with attribution.
 | [Dreame Roboticmower A3 AWD Pro 5000](https://bestrobotmower.co/mowers/dreame-roboticmower-a3-awd-pro-5000?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Dreame Yard Care Store | $2,449.99 | $2,999.99 |
 | [Airseekers Tron SE](https://bestrobotmower.co/mowers/airseekers-tron-se?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Airseekers Store | $899 | $1,099 |
 | [MOVA LiDAX Pro 800](https://bestrobotmower.co/mowers/mova-lidax-pro-800?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | MOVA Store | $764 | $899 |
-| [MOVA LiDAX Ultra 1000](https://bestrobotmower.co/mowers/mova-lidax-ultra-1000?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | MOVA Store | $853 | $999 |
 | [Airseekers Tron Plus](https://bestrobotmower.co/mowers/airseekers-tron-plus?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Airseekers Store | $1,799 | $2,099 |
 | [Dreame A3 AWD 2000](https://bestrobotmower.co/mowers/dreame-a3-awd-2000?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Dreame Yard Care Store | $1,459.99 | $1,699.99 |
 | [Mammotion Luba Mini 2 AWD](https://bestrobotmower.co/mowers/mammotion-luba-mini-2-awd?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Mammotion Store | $1,599 | $1,799 |
@@ -40,6 +39,7 @@ with attribution.
 | [MOVA LiDAX Ultra 2000](https://bestrobotmower.co/mowers/mova-lidax-ultra-2000?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | MOVA Store | $1,099 | $1,199 |
 | [MOVA LiDAX Ultra 3000 AWD](https://bestrobotmower.co/mowers/mova-lidax-ultra-3000-awd?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | MOVA Store | $2,199 | $2,399 |
 | [Anthbot M9](https://bestrobotmower.co/mowers/anthbot-m9?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Anthbot Store | $649 | $699 |
+| [MOVA LiDAX Ultra 1000](https://bestrobotmower.co/mowers/mova-lidax-ultra-1000?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | MOVA Store | $799 | $853 |
 | [Segway Navimow i2 AWD](https://bestrobotmower.co/mowers/segway-navimow-i2-awd?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Segway Navimow Store | $849 | $899 |
 | [Anthbot M5 LiDAR](https://bestrobotmower.co/mowers/anthbot-m5-lidar?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Anthbot Store | $759 | $799 |
 | [Segway Navimow i2 LiDAR](https://bestrobotmower.co/mowers/segway-navimow-i2-lidar?utm_source=github&utm_medium=readme&utm_campaign=black-friday) | Segway Navimow Store | $1,329 | $1,399 |
